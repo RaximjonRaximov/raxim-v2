@@ -62,6 +62,18 @@ export default async function PromptPackPage({ params }: Props) {
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4">
                 <Image src={prompt.coverImage} alt={prompt.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
+              {(() => {
+                const extra = ((prompt.metadata as { images?: string[] } | null)?.images || []).filter((url) => url !== prompt.coverImage);
+                return extra.length > 0 ? (
+                  <div className="grid grid-cols-2 gap-2 mb-4">
+                    {extra.map((url, idx) => (
+                      <div key={idx} className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                        <Image src={url} alt={`${prompt.title} variant ${idx + 1}`} fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
+                      </div>
+                    ))}
+                  </div>
+                ) : null;
+              })()}
               {prompt.isFreeSample ? (
                 <p className="text-sm font-mono bg-page p-4 rounded-xl leading-relaxed whitespace-pre-wrap">{prompt.promptText}</p>
               ) : (

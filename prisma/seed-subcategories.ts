@@ -49,14 +49,27 @@ function imageUrl(prompt: string, seed: number, aspectRatio: string): string {
   return `https://image.pollinations.ai/prompt/${encoded}?width=${width}&height=${height}&nologo=true&model=flux&seed=${seed}`;
 }
 
+const SUBCATEGORY_ALIASES: Record<string, Record<string, string>> = {
+  photography: {
+    workspace: "photography-behind-the-scenes-workspace",
+    "holiday-photography": "photography-seasonal-holiday-photography",
+  },
+  "design-graphics": {
+    "business-card": "design-graphics-stationery-business-card",
+  },
+};
+
 function productSlugCandidates(p: SubcategoryPrompt): string[] {
   const cat = p.categorySlug.trim();
   const sub = slugify(p.subcategoryTitle);
+  const alias = SUBCATEGORY_ALIASES[cat]?.[sub];
   return [
+    alias,
     cat, // some children returned the full product slug in categorySlug
     `${cat}-${sub}`,
     sub,
-  ].filter((v, i, a) => a.indexOf(v) === i);
+  ].filter((v): v is string => Boolean(v))
+    .filter((v, i, a) => a.indexOf(v) === i);
 }
 
 async function seed() {
@@ -106,18 +119,27 @@ async function seed() {
 
     for (let i = 0; i < items.length; i++) {
       const item = items[i];
+      const coverSeed = globalSeed;
+      const altSeed1 = globalSeed + 1;
+      const altSeed2 = globalSeed + 2;
       await prisma.promptItem.create({
         data: {
           packId: product.id,
           title: item.title,
           aspectRatio: item.aspectRatio,
           promptText: item.reusablePrompt,
-          coverImage: imageUrl(item.filledImagePrompt, globalSeed, item.aspectRatio),
+          coverImage: imageUrl(item.filledImagePrompt, coverSeed, item.aspectRatio),
+          metadata: {
+            images: [
+              imageUrl(item.filledImagePrompt, altSeed1, item.aspectRatio),
+              imageUrl(item.filledImagePrompt, altSeed2, item.aspectRatio),
+            ],
+          },
           sortOrder: i,
           isFreeSample: true,
         },
       });
-      globalSeed++;
+      globalSeed += 3;
       created++;
     }
 

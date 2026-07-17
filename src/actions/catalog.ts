@@ -33,7 +33,7 @@ export async function getPromptPackWithSamples(slug: string) {
       category: true,
       promptItems: {
         orderBy: { sortOrder: "asc" },
-        select: { id: true, title: true, aspectRatio: true, coverImage: true, isFreeSample: true, promptText: true },
+        select: { id: true, title: true, aspectRatio: true, coverImage: true, metadata: true, isFreeSample: true, promptText: true },
       },
     },
   });

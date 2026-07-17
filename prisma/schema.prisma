@@ -149,6 +149,7 @@ model PromptItem {
   aspectRatio  String
   promptText   String  @db.Text
   coverImage   String
+  metadata     Json?
   sortOrder    Int
   isFreeSample Boolean @default(false)
 
