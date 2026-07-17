@@ -49,19 +49,43 @@ function imageUrl(prompt: string, seed: number, aspectRatio: string): string {
   return `https://image.pollinations.ai/prompt/${encoded}?width=${width}&height=${height}&nologo=true&model=flux&seed=${seed}`;
 }
 
+function productSlugCandidates(p: SubcategoryPrompt): string[] {
+  const cat = p.categorySlug.trim();
+  const sub = slugify(p.subcategoryTitle);
+  return [
+    cat, // some children returned the full product slug in categorySlug
+    `${cat}-${sub}`,
+    sub,
+  ].filter((v, i, a) => a.indexOf(v) === i);
+}
+
 async function seed() {
   const raw = JSON.parse(
     fs.readFileSync(path.join(__dirname, "subcategory-prompts-all.json"), "utf-8")
   );
   const prompts: SubcategoryPrompt[] = Array.isArray(raw) ? raw : raw.prompts;
 
-  // Group by product slug
+  const products = await prisma.product.findMany({
+    where: { type: "PROMPT_PACK" },
+    select: { id: true, slug: true },
+  });
+  const productBySlug = new Map(products.map((p) => [p.slug, p]));
+
+  // Map each prompt to an existing product slug
   const byProduct = new Map<string, SubcategoryPrompt[]>();
+  const missing: string[] = [];
+
   for (const p of prompts) {
-    const productSlug = `${p.categorySlug}-${slugify(p.subcategoryTitle)}`;
-    const list = byProduct.get(productSlug) || [];
+    const candidates = productSlugCandidates(p);
+    const foundSlug = candidates.find((s) => productBySlug.has(s));
+    if (!foundSlug) {
+      const key = `${p.categorySlug} / ${p.subcategoryTitle} (tried ${candidates.join(", ")})`;
+      if (!missing.includes(key)) missing.push(key);
+      continue;
+    }
+    const list = byProduct.get(foundSlug) || [];
     list.push(p);
-    byProduct.set(productSlug, list);
+    byProduct.set(foundSlug, list);
   }
 
   let globalSeed = 10000;
@@ -69,15 +93,9 @@ async function seed() {
   let created = 0;
 
   for (const [productSlug, items] of byProduct) {
-    const product = await prisma.product.findUnique({
-      where: { slug: productSlug },
-    });
-    if (!product) {
-      console.warn(`Product not found: ${productSlug}`);
-      continue;
-    }
+    const product = productBySlug.get(productSlug)!;
 
-    // Remove old generic sample prompt items for this subcategory product
+    // Keep only the new 30 prompts per subcategory product
     await prisma.promptItem.deleteMany({ where: { packId: product.id } });
 
     const coverImage = imageUrl(items[0].filledImagePrompt, globalSeed, items[0].aspectRatio);
@@ -105,6 +123,11 @@ async function seed() {
 
     updated++;
     console.log(`Updated ${productSlug} with ${items.length} prompts`);
+  }
+
+  if (missing.length) {
+    console.warn(`Missing products (${missing.length}):`);
+    for (const m of missing.slice(0, 20)) console.warn(m);
   }
 
   console.log(`Subcategory seed complete. Updated ${updated} products, created ${created} prompt items.`);
