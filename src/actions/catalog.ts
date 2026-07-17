@@ -5,7 +5,7 @@ import { prisma } from "@/lib/db";
 export async function getPromptPacks() {
   return prisma.product.findMany({
     where: { type: "PROMPT_PACK", published: true },
-    orderBy: { sortOrder: "asc" },
+    orderBy: [{ category: { sortOrder: "asc" } }, { sortOrder: "asc" }],
     include: {
       category: true,
       _count: { select: { promptItems: true } },

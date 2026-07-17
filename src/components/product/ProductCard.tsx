@@ -16,6 +16,7 @@ export function ProductCard({
   const link = href || (product.type === "PROMPT_PACK" ? `/prompts/${product.slug}` : `/courses/${product.slug}`);
   const count = product._count?.promptItems || product._count?.lessons || 0;
   const label = product.category?.title || product.type.toLowerCase().replace(/_/g, " ");
+  const countLabel = `${count} ${product.type === "PROMPT_PACK" ? "prompts" : "lessons"}`;
 
   return (
     <Link href={link} className="group block">
@@ -38,9 +39,7 @@ export function ProductCard({
           <h3 className="text-lg font-bold text-ink tracking-tight line-clamp-1">{product.title}</h3>
           <p className="mt-2 text-sm text-muted line-clamp-2">{product.description}</p>
           <div className="mt-4 flex items-center justify-between">
-            <span className="text-sm font-mono uppercase tracking-label text-muted">
-              {count} {product.type === "PROMPT_PACK" ? "prompts" : "lessons"}
-            </span>
+            <span className="text-sm font-mono uppercase tracking-label text-muted">{countLabel}</span>
             <span className="text-lg font-bold text-ink">${(product.price / 100).toFixed(2)}</span>
           </div>
         </div>
