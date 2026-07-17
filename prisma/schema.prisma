@@ -1,0 +1,249 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  CUSTOMER
+  ADMIN
+}
+
+enum ProductType {
+  PROMPT_PACK
+  COURSE
+  BUNDLE
+}
+
+enum PaymentProvider {
+  STRIPE
+  PAYME
+  CLICK
+  MANUAL
+}
+
+enum PaymentStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  FULFILLED
+  CANCELLED
+  REFUNDED
+}
+
+model User {
+  id             String   @id @default(cuid())
+  email          String   @unique
+  passwordHash   String?
+  name           String?
+  telegramId     String?  @unique
+  telegramHandle String?
+  role           Role     @default(CUSTOMER)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  orders       Order[]
+  entitlements Entitlement[]
+  sessions     Session[]
+  accounts     Account[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Product {
+  id          String      @id @default(cuid())
+  type        ProductType
+  slug        String      @unique
+  title       String
+  description String      @db.Text
+  price       Int
+  currency    String      @default("USD")
+  coverImage  String
+  category    String?
+  level       String?
+  isBundle    Boolean     @default(false)
+  published   Boolean     @default(true)
+  sortOrder   Int         @default(0)
+  metadata    Json?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  promptItems    PromptItem[]
+  lessons        Lesson[]
+  orderItems     OrderItem[]
+  entitlements   Entitlement[]
+  bundleChildren BundleProduct[] @relation("BundleParent")
+  bundleParents  BundleProduct[] @relation("BundleChild")
+}
+
+model BundleProduct {
+  id       String @id @default(cuid())
+  bundleId String
+  childId  String
+
+  bundle Product @relation("BundleParent", fields: [bundleId], references: [id])
+  child  Product @relation("BundleChild", fields: [childId], references: [id])
+
+  @@unique([bundleId, childId])
+}
+
+model PromptItem {
+  id           String  @id @default(cuid())
+  packId       String
+  title        String
+  aspectRatio  String
+  promptText   String  @db.Text
+  coverImage   String
+  sortOrder    Int
+  isFreeSample Boolean @default(false)
+
+  pack Product @relation(fields: [packId], references: [id], onDelete: Cascade)
+}
+
+model Lesson {
+  id          String  @id @default(cuid())
+  courseId    String
+  title       String
+  slug        String
+  sortOrder   Int
+  videoKey    String
+  duration    Int?
+  resourceUrl String?
+  description String? @db.Text
+
+  course Product @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@unique([courseId, slug])
+}
+
+model Order {
+  id              String           @id @default(cuid())
+  userId          String
+  status          OrderStatus      @default(PENDING)
+  totalAmount     Int
+  currency        String           @default("USD")
+  paymentProvider PaymentProvider?
+  providerOrderId String?
+  notes           String?          @db.Text
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+
+  user    User        @relation(fields: [userId], references: [id])
+  items   OrderItem[]
+  payment Payment?
+}
+
+model OrderItem {
+  id        String @id @default(cuid())
+  orderId   String
+  productId String
+  price     Int
+  quantity  Int    @default(1)
+
+  order   Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id])
+}
+
+model Payment {
+  id             String          @id @default(cuid())
+  orderId        String          @unique
+  provider       PaymentProvider
+  providerTxId   String?
+  status         PaymentStatus   @default(PENDING)
+  amount         Int
+  currency       String          @default("USD")
+  rawWebhookData Json?
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+
+  order Order @relation(fields: [orderId], references: [id])
+}
+
+model Entitlement {
+  id        String   @id @default(cuid())
+  userId    String
+  productId String
+  grantedAt DateTime @default(now())
+  source    String   @default("purchase")
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id])
+
+  @@unique([userId, productId])
+}
+
+model Coupon {
+  id              String    @id @default(cuid())
+  code            String    @unique
+  discountPercent Int
+  maxUses         Int?
+  usedCount       Int       @default(0)
+  validFrom       DateTime  @default(now())
+  validUntil      DateTime?
+  active          Boolean   @default(true)
+  createdAt       DateTime  @default(now())
+}
+
+model MediaAsset {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  url       String
+  filename  String
+  mimeType  String
+  size      Int
+  alt       String?
+  createdAt DateTime @default(now())
+}
+
+model SiteContent {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String @db.Text
+}
+
+model SiteSettings {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String
+}
