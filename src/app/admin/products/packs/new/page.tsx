@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { adminCreateProduct } from "@/actions/admin";
+import { adminCreateProduct, adminListCategories } from "@/actions/admin";
 import { Input } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -8,7 +8,9 @@ export const metadata = {
   title: "New prompt pack — Admin — Raxim",
 };
 
-export default function NewPackPage() {
+export default async function NewPackPage() {
+  const categories = await adminListCategories();
+
   async function create(formData: FormData) {
     "use server";
     const title = String(formData.get("title"));
@@ -16,7 +18,7 @@ export default function NewPackPage() {
     const description = String(formData.get("description"));
     const price = Number(formData.get("price")) * 100;
     const coverImage = String(formData.get("coverImage"));
-    const category = String(formData.get("category"));
+    const categoryId = String(formData.get("categoryId"));
 
     const product = await adminCreateProduct({
       type: "PROMPT_PACK",
@@ -25,7 +27,7 @@ export default function NewPackPage() {
       description,
       price,
       coverImage,
-      category,
+      categoryId: categoryId || undefined,
     });
     redirect(`/admin/products/packs/${product.id}/edit`);
   }
@@ -40,7 +42,15 @@ export default function NewPackPage() {
           <Input name="description" label="Description" required />
           <Input name="price" type="number" label="Price (USD)" min="0" step="0.01" required />
           <Input name="coverImage" label="Cover image URL" required />
-          <Input name="category" label="Category" />
+          <div>
+            <label className="block mb-2 text-xs font-mono uppercase tracking-label text-muted">Category</label>
+            <select name="categoryId" className="w-full h-12 px-4 rounded-2xl border border-line bg-paper">
+              <option value="">Uncategorized</option>
+              {categories.map((c) => (
+                <option key={c.id} value={c.id}>{c.title}</option>
+              ))}
+            </select>
+          </div>
           <Button type="submit">Create pack</Button>
         </form>
       </Card>

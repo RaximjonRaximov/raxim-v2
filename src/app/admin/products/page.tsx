@@ -26,6 +26,7 @@ export default async function AdminProductsPage() {
             <tr>
               <th className="px-5 py-3">Title</th>
               <th className="px-5 py-3">Type</th>
+              <th className="px-5 py-3">Category</th>
               <th className="px-5 py-3">Price</th>
               <th className="px-5 py-3">Status</th>
               <th className="px-5 py-3"></th>
@@ -35,7 +36,8 @@ export default async function AdminProductsPage() {
             {products.map((product) => (
               <tr key={product.id} className="border-t border-line">
                 <td className="px-5 py-4 font-medium text-ink">{product.title}</td>
-                <td className="px-5 py-4 text-muted">{product.type}</td>
+                <td className="px-5 py-4 text-muted">{product.type.replace(/_/g, " ")}</td>
+                <td className="px-5 py-4 text-muted">{product.category?.title || "—"}</td>
                 <td className="px-5 py-4">${(product.price / 100).toFixed(2)}</td>
                 <td className="px-5 py-4">{product.published ? <Badge variant="lime">Published</Badge> : <Badge variant="default">Draft</Badge>}</td>
                 <td className="px-5 py-4">

@@ -15,6 +15,7 @@ export default async function AdminLayout({ children }: { children: ReactNode })
             {[
               { href: "/admin", label: "Dashboard" },
               { href: "/admin/products", label: "Products" },
+              { href: "/admin/categories", label: "Categories" },
               { href: "/admin/orders", label: "Orders" },
               { href: "/admin/customers", label: "Customers" },
               { href: "/admin/coupons", label: "Coupons" },

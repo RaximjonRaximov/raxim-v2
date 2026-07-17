@@ -60,7 +60,7 @@ export async function adminListProducts(type?: ProductType) {
   return prisma.product.findMany({
     where: type ? { type } : {},
     orderBy: { sortOrder: "asc" },
-    include: { _count: { select: { promptItems: true, lessons: true, bundleChildren: true } } },
+    include: { category: true, _count: { select: { promptItems: true, lessons: true, bundleChildren: true } } },
   });
 }
 
@@ -69,6 +69,7 @@ export async function adminGetProduct(id: string) {
   return prisma.product.findUnique({
     where: { id },
     include: {
+      category: true,
       promptItems: { orderBy: { sortOrder: "asc" } },
       lessons: { orderBy: { sortOrder: "asc" } },
       bundleChildren: { include: { child: true } },
@@ -83,7 +84,7 @@ export async function adminCreateProduct(data: {
   description: string;
   price: number;
   coverImage: string;
-  category?: string;
+  categoryId?: string;
   level?: string;
   isBundle?: boolean;
   metadata?: object;
@@ -103,7 +104,7 @@ export async function adminUpdateProduct(
     description?: string;
     price?: number;
     coverImage?: string;
-    category?: string;
+    categoryId?: string;
     level?: string;
     published?: boolean;
     metadata?: object;
@@ -303,4 +304,36 @@ export async function updateSiteSetting(key: string, value: string) {
     update: { value },
     create: { key, value },
   });
+}
+
+export async function adminListCategories() {
+  await requireAdmin();
+  return prisma.category.findMany({
+    orderBy: { sortOrder: "asc" },
+    include: { _count: { select: { products: true } } },
+  });
+}
+
+export async function adminCreateCategory(data: {
+  title: string;
+  slug: string;
+  description?: string;
+  coverImage?: string;
+  sortOrder?: number;
+}) {
+  await requireAdmin();
+  return prisma.category.create({ data });
+}
+
+export async function adminUpdateCategory(
+  id: string,
+  data: Partial<{ title: string; slug: string; description: string; coverImage: string; sortOrder: number }>
+) {
+  await requireAdmin();
+  return prisma.category.update({ where: { id }, data });
+}
+
+export async function adminDeleteCategory(id: string) {
+  await requireAdmin();
+  return prisma.category.delete({ where: { id } });
 }

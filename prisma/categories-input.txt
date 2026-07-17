@@ -1,0 +1,373 @@
+# AI Image Prompt Categories
+
+A complete set of English category titles for saving and organizing AI image prompts (Instagram, Threads, Midjourney, Stable Diffusion, DALL·E, etc.).
+
+## 1. Photography
+- Portrait / Headshot
+- Lifestyle Photography
+- Fashion Editorial
+- Runway / Couture
+- Street Style Fashion
+- Beauty & Makeup
+- Fine Art Portrait
+- Conceptual / Surreal Portrait
+- Black & White Photography
+- Film Noir / Cinematic Portrait
+- Documentary / Street Photography
+- Wedding Photography
+- Newborn / Family Photography
+- Boudoir / Intimate Portrait
+- Pet / Animal Photography
+- Wildlife Photography
+- Macro Photography
+- Food Photography
+- Drink / Beverage Photography
+- Travel / Adventure Photography
+- Landscape / Nature Photography
+- Seascape / Beach Photography
+- Astrophotography
+- Aerial / Drone Photography
+- Underwater Photography
+- Architecture Photography
+- Interior Photography
+- Real Estate Photography
+- Automotive / Car Photography
+- Product Photography
+- E-commerce Photography
+- Flat Lay / Styling
+- Event Photography
+- Sports Photography
+- Concert / Music Photography
+- Behind the Scenes / Workspace
+- Seasonal / Holiday Photography
+
+## 2. Illustration & Art
+- Digital Painting
+- Concept Art
+- Character Design
+- Fantasy Art
+- Sci-Fi / Futuristic Art
+- Abstract Art
+- Minimalist Art
+- Geometric Art
+- Surrealism
+- Pop Art
+- Art Deco
+- Art Nouveau
+- Impressionism
+- Oil Painting
+- Watercolor Painting
+- Acrylic Painting
+- Gouache Painting
+- Ink / Line Art
+- Sketch / Pencil Drawing
+- Charcoal Drawing
+- Pastel Drawing
+- Botanical Illustration
+- Scientific / Medical Illustration
+- Children's Book Illustration
+- Comic Book Art
+- Manga / Anime
+- Cartoon / Vector Art
+- Propaganda Poster
+- Retro / Vintage Illustration
+- Ukiyo-e / Japanese Woodblock
+- Pixel Art
+- Graffiti / Street Art
+
+## 3. Design & Graphics
+- Logo Design
+- Brand Identity / Branding
+- Typography / Lettering
+- Poster Design
+- Flyer / Brochure Design
+- Editorial / Magazine Layout
+- Social Media Graphics
+- UI / UX Mockup
+- App Screenshot / Device Mockup
+- Website / Landing Page Visual
+- Icon Design
+- Infographic
+- Diagram / Chart
+- Pattern / Texture
+- Wallpaper Design
+- Packaging Design
+- Stationery / Business Card
+- T-shirt / Merchandise Design
+- Sticker / Emoji / Badge
+- 3D Render
+- Isometric Illustration
+- Wireframe / Blueprint
+- Mockup Scene
+- Collage / Mixed Media
+
+## 4. Characters & People
+- Character Design
+- Character Turnaround / Reference Sheet
+- Game Character Sprite Sheet
+- Avatar / Profile Picture
+- 3D Character
+- Stylized Character
+- Realistic Character
+- Anthropomorphic Character
+- NPC / Crowd Character
+- Emotes / Expressions
+- Costume Design
+- Fashion Model
+- Superhero / Villain
+- Historical Figure
+- Fantasy Races
+- Cyborg / Android
+- Zombie / Monster
+- Cartoon Mascot
+
+## 5. Game Assets
+- Game Character Sprite Sheet
+- Game Item / Inventory Icon
+- Weapon / Equipment
+- Vehicle / Transport
+- Environment / Tileset
+- Background / Parallax
+- UI / HUD Element
+- Isometric Building
+- Top-Down Game Asset
+- Side-Scroller Game Asset
+- 3D Game Asset
+- Loot / Treasure
+- Crafting Material
+- Potion / Consumable
+- Particle Effect / VFX
+- Game Scene / Level Design
+- Game Map / World Map
+- Menu / Loading Screen
+
+## 6. Architecture & Environment
+- Exterior Architecture
+- Interior Architecture
+- Architectural Detail
+- Modern Architecture
+- Vintage / Historical Architecture
+- Brutalist Architecture
+- Futuristic Architecture
+- Urban / Street Scene
+- Cityscape / Skyline
+- Landscape / Nature
+- Fantasy Environment
+- Sci-Fi Environment
+- Post-Apocalyptic Environment
+- Medieval / Castle Environment
+- Desert Environment
+- Forest / Jungle Environment
+- Arctic / Snow Environment
+- Underwater Environment
+- Environment Design
+- Matte Painting
+
+## 7. Fashion & Beauty
+- Fashion Editorial
+- Runway / Couture
+- Street Style
+- Lookbook
+- Accessories / Jewelry
+- Beauty / Makeup
+- Skincare Product
+- Hair Style
+- Nail Art
+- Vintage Fashion
+- Swimwear
+- Lingerie
+- Activewear / Athleisure
+- Formal Wear / Evening Gown
+- Menswear / Suiting
+
+## 8. Product & Commercial
+- Product Photography
+- E-commerce Product
+- Cosmetics Product
+- Tech / Gadget Product
+- Food / Beverage Product
+- Apparel Product
+- Packaging Shot
+- Commercial Advertising
+- Hero Shot
+- Flat Lay
+- 3D Product Render
+- Catalog / Lookbook
+- Lifestyle Product
+- Studio Product
+
+## 9. Social Media Content
+- Instagram Post / Carousel
+- Instagram Story / Reel Cover
+- Threads Post Visual
+- Quote Card / Motivational
+- Meme / Reaction Image
+- Aesthetic / Moodboard
+- Behind the Scenes
+- Travel / Lifestyle
+- Food / Recipe
+- Fitness / Wellness
+- Pet Content
+- Seasonal / Holiday
+- Personal Brand / Portrait
+- Minimalist Brand Aesthetic
+- Educational / Infographic
+- Tech / App Showcase
+- Sustainability / Eco-Friendly
+- User-Generated Content Style
+
+## 10. Abstract & Conceptual
+- Abstract Photography
+- Abstract Painting
+- Generative Art
+- Fractal Art
+- Data Visualization Art
+- Surreal Composition
+- Dreamlike / Ethereal
+- Minimal / Monochrome
+- Concept Art
+- Symbolic / Allegorical
+- Optical Illusion
+- Psychedelic Art
+
+## 11. Nature & Animals
+- Landscape
+- Mountain / Forest
+- Desert / Tundra
+- Seascape / Beach
+- Sunset / Sunrise
+- Flowers / Botanical
+- Trees / Plants
+- Wildlife
+- Birds
+- Insects / Macro
+- Pets
+- Farm Animals
+- Underwater Life
+- Coral Reef
+- Weather / Storm
+- Seasons
+- National Park / Wilderness
+
+## 12. Technology & Sci-Fi
+- Futuristic City
+- Cyberpunk
+- Steampunk
+- Space / Cosmos
+- Robots / Mecha
+- Drones / UAV
+- Vehicles / Spaceships
+- AI / Cyberspace
+- Holograms / Interfaces
+- Biotechnology
+- Retro-Futurism
+- Sci-Fi Laboratory
+- Hacker / Terminal Aesthetic
+
+## 13. Vintage & Retro
+- Vintage Photography
+- Retro Illustration
+- Polaroid / Instant Film
+- Analog / 35mm Film
+- 80s Aesthetic
+- 90s Aesthetic
+- 70s Hippie / Disco
+- 60s Mod / Psychedelic
+- 50s Mid-Century
+- 40s Film Noir
+- 20s Art Deco
+- Victorian / Edwardian
+- Pin-up Art
+- Retro Futurism
+
+## 14. Video & Cinematic
+- Movie Still / Film Look
+- Music Video Still
+- Documentary Style
+- Cinematic Portrait
+- Cinematic Landscape
+- Drone Shot
+- Storyboard
+- Scene Concept
+- Lighting Study
+- Color Grading Reference
+- Film Poster Composition
+
+## 15. 3D & Rendering
+- 3D Character
+- 3D Environment
+- 3D Product Render
+- 3D Typography
+- Clay Render
+- Voxel Art
+- Low Poly Art
+- Photorealistic Render
+- Stylized Render
+- Isometric 3D
+- Motion Graphics Still
+- NFT / Digital Collectible Style
+
+## 16. Textiles & Patterns
+- Fabric / Textile Design
+- Wallpaper / Surface Pattern
+- Tile / Mosaic
+- Embroidery / Cross-Stitch
+- Knitting / Crochet
+- Rug / Carpet Design
+- Fashion Print
+- Batik / Ikat
+- Lace / Macramé
+- Quilt / Patchwork
+
+## 17. Educational & Diagrams
+- Infographic
+- Diagram / Chart
+- Scientific Illustration
+- Anatomy / Medical
+- Maps / Cartography
+- Timeline
+- How-To / Process
+- Educational Poster
+- Textbook Illustration
+- Instruction Manual
+
+## 18. Holidays & Seasonal
+- Christmas
+- Halloween
+- Valentine's Day
+- Easter
+- New Year
+- Thanksgiving
+- Autumn / Fall
+- Winter
+- Spring
+- Summer
+- Back to School
+- Birthday / Celebration
+- Wedding / Anniversary
+
+## 19. Music & Entertainment
+- Album Cover
+- Concert Poster
+- Music Artist Portrait
+- Festival / Event
+- Book Cover
+- Movie Poster
+- Podcast Cover
+- Gaming Stream Overlay
+- Stage Design
+- Merchandise Art
+
+## 20. Marketing & Advertising
+- Ad Creative
+- Banner / Billboard
+- Email Header
+- Landing Page Visual
+- Sales / Promo Graphic
+- Testimonial / Review Card
+- Case Study Visual
+- Social Proof Graphic
+- Lead Magnet Cover
+- Coupon / Voucher Design
+
+>>>>>>>>> bu prompt rasm bo'limlari, shunaqa bo'limlari bo'lsin yani 20mata katta va ularni ichida kichik bo'limlar va har bir bo'limda rasm va promptlar bo'ladi, qara profitsional sayt yarat zamonaviy ui ux css animatsiyalari bilan, + frontend backend ishlasin, yani admin sifatida kanal statistikasi, bo'lim yaratish ochirish narxlash barchasini boshqara olar, va oddiy foydalanuvchini ham profili bo'lsin,

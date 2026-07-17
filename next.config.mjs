@@ -6,6 +6,8 @@ const nextConfig = {
       { protocol: "https", hostname: "*.r2.cloudflarestorage.com" },
       { protocol: "https", hostname: "*.r2.dev" },
       { protocol: "https", hostname: "pub-*.r2.dev" },
+      { protocol: "https", hostname: "picsum.photos" },
+      { protocol: "https", hostname: "image.pollinations.ai" },
     ],
   },
 };

@@ -37,7 +37,7 @@ export default async function CoursePage({ params }: Props) {
           <h1 className="text-4xl font-bold tracking-tight text-ink">{course.title}</h1>
           <p className="mt-4 text-lg text-muted">{course.description}</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Badge variant="default">{course.category}</Badge>
+            {course.category && <Badge variant="default">{course.category.title}</Badge>}
             <Badge variant="blue">{course.level}</Badge>
             <Badge variant="default">{course.lessons.length} lessons</Badge>
           </div>

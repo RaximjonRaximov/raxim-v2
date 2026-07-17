@@ -1,5 +1,5 @@
 import { notFound, redirect } from "next/navigation";
-import { adminGetProduct, adminUpdateProduct, adminCreateLesson, adminUpdateLesson, adminDeleteLesson } from "@/actions/admin";
+import { adminGetProduct, adminUpdateProduct, adminCreateLesson, adminUpdateLesson, adminDeleteLesson, adminListCategories } from "@/actions/admin";
 import { Input } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -14,6 +14,7 @@ export const metadata = {
 
 export default async function EditCoursePage({ params }: Props) {
   const product = await adminGetProduct(params.id);
+  const categories = await adminListCategories();
   if (!product || product.type !== "COURSE") return notFound();
 
   async function updateCourse(formData: FormData) {
@@ -26,7 +27,7 @@ export default async function EditCoursePage({ params }: Props) {
       description: String(formData.get("description")),
       price: Math.round(Number(formData.get("price")) * 100),
       coverImage: String(formData.get("coverImage")),
-      category: String(formData.get("category")),
+      categoryId: String(formData.get("categoryId")) || undefined,
       level: String(formData.get("level")),
       published: formData.get("published") === "on",
       metadata: { ...metadata, learn: [String(formData.get("learn1")), String(formData.get("learn2")), String(formData.get("learn3"))] },
@@ -62,7 +63,15 @@ export default async function EditCoursePage({ params }: Props) {
           <Input name="description" label="Description" defaultValue={product.description} required />
           <Input name="price" type="number" label="Price (USD)" defaultValue={(product.price / 100).toFixed(2)} min="0" step="0.01" required />
           <Input name="coverImage" label="Cover image URL" defaultValue={product.coverImage} required />
-          <Input name="category" label="Category" defaultValue={product.category || ""} />
+          <div>
+            <label className="block mb-2 text-xs font-mono uppercase tracking-label text-muted">Category</label>
+            <select name="categoryId" defaultValue={product.categoryId || ""} className="w-full h-12 px-4 rounded-2xl border border-line bg-paper">
+              <option value="">Uncategorized</option>
+              {categories.map((c) => (
+                <option key={c.id} value={c.id}>{c.title}</option>
+              ))}
+            </select>
+          </div>
           <Input name="level" label="Level" defaultValue={product.level || ""} />
           <Input name="learn1" label="Learning point 1" defaultValue={learn[0]} />
           <Input name="learn2" label="Learning point 2" defaultValue={learn[1]} />

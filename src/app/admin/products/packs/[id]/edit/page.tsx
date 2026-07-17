@@ -1,5 +1,5 @@
 import { notFound, redirect } from "next/navigation";
-import { adminGetProduct, adminUpdateProduct, adminCreatePromptItem, adminUpdatePromptItem, adminDeletePromptItem } from "@/actions/admin";
+import { adminGetProduct, adminUpdateProduct, adminCreatePromptItem, adminUpdatePromptItem, adminDeletePromptItem, adminListCategories } from "@/actions/admin";
 import { Input } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -15,6 +15,7 @@ export const metadata = {
 
 export default async function EditPackPage({ params }: Props) {
   const product = await adminGetProduct(params.id);
+  const categories = await adminListCategories();
   if (!product || product.type !== "PROMPT_PACK") return notFound();
 
   async function updatePack(formData: FormData) {
@@ -25,7 +26,7 @@ export default async function EditPackPage({ params }: Props) {
       description: String(formData.get("description")),
       price: Math.round(Number(formData.get("price")) * 100),
       coverImage: String(formData.get("coverImage")),
-      category: String(formData.get("category")),
+      categoryId: String(formData.get("categoryId")) || undefined,
       published: formData.get("published") === "on",
     });
     redirect(`/admin/products/packs/${params.id}/edit`);
@@ -56,7 +57,15 @@ export default async function EditPackPage({ params }: Props) {
           <Input name="description" label="Description" defaultValue={product.description} required />
           <Input name="price" type="number" label="Price (USD)" defaultValue={(product.price / 100).toFixed(2)} min="0" step="0.01" required />
           <Input name="coverImage" label="Cover image URL" defaultValue={product.coverImage} required />
-          <Input name="category" label="Category" defaultValue={product.category || ""} />
+          <div>
+            <label className="block mb-2 text-xs font-mono uppercase tracking-label text-muted">Category</label>
+            <select name="categoryId" defaultValue={product.categoryId || ""} className="w-full h-12 px-4 rounded-2xl border border-line bg-paper">
+              <option value="">Uncategorized</option>
+              {categories.map((c) => (
+                <option key={c.id} value={c.id}>{c.title}</option>
+              ))}
+            </select>
+          </div>
           <label className="flex items-center gap-2 text-sm text-ink">
             <input type="checkbox" name="published" defaultChecked={product.published} />
             Published
@@ -128,14 +137,13 @@ function PromptCard({ prompt, packId }: { prompt: { id: string; title: string; a
       </form>
 
       <form
-        action={async (formData: FormData) => {
+        action={async () => {
           "use server";
-          await adminDeletePromptItem(String(formData.get("promptId")));
+          await adminDeletePromptItem(prompt.id);
           redirect(`/admin/products/packs/${packId}/edit`);
         }}
         className="mt-4 pt-4 border-t border-line"
       >
-        <input type="hidden" name="promptId" value={prompt.id} />
         <Button type="submit" size="sm" variant="outline">Delete prompt</Button>
       </form>
     </Card>

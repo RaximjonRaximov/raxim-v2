@@ -34,7 +34,11 @@ export default async function PromptPackPage({ params }: Props) {
           <h1 className="text-4xl font-bold tracking-tight text-ink">{pack.title}</h1>
           <p className="mt-4 text-lg text-muted">{pack.description}</p>
           <div className="mt-6 flex items-center gap-3">
-            <Badge variant="default">{pack.category}</Badge>
+            {pack.category && (
+              <Link href={`/categories/${pack.category.slug}`}>
+                <Badge variant="default">{pack.category.title}</Badge>
+              </Link>
+            )}
             <span className="font-mono text-sm text-muted">{pack.promptItems.length} prompts</span>
           </div>
           <p className="mt-8 text-3xl font-bold text-ink">${(pack.price / 100).toFixed(2)}</p>
