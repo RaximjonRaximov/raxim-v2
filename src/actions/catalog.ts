@@ -40,6 +40,9 @@ export async function getCourses() {
   return prisma.product.findMany({
     where: { type: "COURSE", published: true },
     orderBy: { sortOrder: "asc" },
+    include: {
+      _count: { select: { lessons: true } },
+    },
   });
 }
 
