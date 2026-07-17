@@ -64,7 +64,7 @@ async function seed() {
         slug,
         title: entry.title,
         description: `Premium AI prompt for ${entry.title.toLowerCase()}. Ready to use with Midjourney, DALL·E, GPT Image 2, Flux, and Stable Diffusion.`,
-        price: 500,
+        price: 0,
         coverImage,
         categoryId: category.id,
         published: true,
@@ -85,7 +85,7 @@ async function seed() {
         promptText: entry.prompt,
         coverImage,
         sortOrder: 0,
-        isFreeSample: false,
+        isFreeSample: true,
       },
     });
   }

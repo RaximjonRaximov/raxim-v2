@@ -40,7 +40,7 @@ export function ProductCard({
           <p className="mt-2 text-sm text-muted line-clamp-2">{product.description}</p>
           <div className="mt-4 flex items-center justify-between">
             <span className="text-sm font-mono uppercase tracking-label text-muted">{countLabel}</span>
-            <span className="text-lg font-bold text-ink">${(product.price / 100).toFixed(2)}</span>
+            <span className="text-lg font-bold text-ink">{product.price === 0 ? "Free" : `$${(product.price / 100).toFixed(2)}`}</span>
           </div>
         </div>
       </div>

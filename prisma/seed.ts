@@ -32,7 +32,7 @@ const courses = [
     level: "Beginner",
     lessonCount: 24,
     durationSeconds: 16200,
-    price: 3900,
+    price: 0,
   },
   {
     slug: "ai-portraits-and-personal-branding",
@@ -41,7 +41,7 @@ const courses = [
     level: "Beginner",
     lessonCount: 18,
     durationSeconds: 10800,
-    price: 2900,
+    price: 0,
   },
   {
     slug: "logo-identity-systems-with-ai",
@@ -50,7 +50,7 @@ const courses = [
     level: "Intermediate",
     lessonCount: 20,
     durationSeconds: 12600,
-    price: 3500,
+    price: 0,
   },
   {
     slug: "product-visuals-that-sell",
@@ -59,7 +59,7 @@ const courses = [
     level: "Intermediate",
     lessonCount: 16,
     durationSeconds: 9000,
-    price: 2900,
+    price: 0,
   },
   {
     slug: "cinematic-ai-video-and-motion",
@@ -68,7 +68,7 @@ const courses = [
     level: "Intermediate",
     lessonCount: 14,
     durationSeconds: 9000,
-    price: 4900,
+    price: 0,
   },
   {
     slug: "freelancing-with-ai-design",
@@ -77,7 +77,7 @@ const courses = [
     level: "All levels",
     lessonCount: 12,
     durationSeconds: 7200,
-    price: 2500,
+    price: 0,
   },
 ];
 
@@ -148,7 +148,7 @@ async function seed() {
           slug: subSlug,
           title,
           description: `A curated collection of production-ready prompts for ${title.toLowerCase()}. Each prompt includes aspect ratio guidance and replaceable tokens so you can drop in your own subjects and colors.`,
-          price: 500,
+          price: 0,
           coverImage: coverImage(subSlug),
           categoryId: category.id,
           sortOrder: productSort++,
@@ -168,7 +168,7 @@ async function seed() {
           promptText: promptTemplate(title),
           coverImage: coverImage(`${subSlug}-prompt`),
           sortOrder: 0,
-          isFreeSample: false,
+          isFreeSample: true,
         },
       });
     }
@@ -182,7 +182,7 @@ async function seed() {
       slug: "full-prompt-library",
       title: "Full Prompt Library",
       description: `Every prompt pack in one bundle. ${packProducts.length}+ prompts covering all categories.`,
-      price: 9900,
+      price: 0,
       coverImage: coverImage("full-prompt-library", 1200, 800),
       isBundle: true,
       metadata: { bundleType: "prompts" },
@@ -208,7 +208,7 @@ async function seed() {
         description: `${course.title} is a ${course.level.toLowerCase()}-level course with ${course.lessonCount} lessons and over ${Math.round(
           course.durationSeconds / 3600
         )} hours of video. Learn the exact systems used to create sellable AI visuals for clients.`,
-        price: course.price,
+        price: 0,
         coverImage: coverImage(course.slug),
         level: course.level,
         sortOrder: i,
@@ -246,7 +246,7 @@ async function seed() {
       slug: "all-access",
       title: "All-Access",
       description: "Every course plus the full prompt library. The complete Raxim toolkit.",
-      price: 19900,
+      price: 0,
       coverImage: coverImage("all-access", 1200, 800),
       isBundle: true,
       metadata: { bundleType: "all-access" },

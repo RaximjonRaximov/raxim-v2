@@ -14,6 +14,7 @@ export function CheckoutForm({ product, telegramHandle }: { product: Product; te
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const router = useRouter();
+  const isFree = product.price === 0;
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -49,30 +50,32 @@ export function CheckoutForm({ product, telegramHandle }: { product: Product; te
 
       <Card className="p-8">
         <h2 className="text-2xl font-bold text-ink">Checkout</h2>
-        <p className="mt-1 text-3xl font-bold text-ink">${(product.price / 100).toFixed(2)}</p>
+        <p className="mt-1 text-3xl font-bold text-ink">{isFree ? "Free" : `$${(product.price / 100).toFixed(2)}`}</p>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-6">
-          <div className="space-y-3">
-            <label className={`flex items-center gap-4 p-4 rounded-xl border cursor-pointer transition-colors ${method === "card" ? "border-blue bg-page" : "border-line"}`}>
-              <input type="radio" name="method" value="card" checked={method === "card"} onChange={() => setMethod("card")} />
-              <div>
-                <p className="font-bold text-ink">Card</p>
-                <p className="text-sm text-muted">Pay securely with Stripe</p>
-              </div>
-            </label>
-            <label className={`flex items-center gap-4 p-4 rounded-xl border cursor-pointer transition-colors ${method === "telegram" ? "border-blue bg-page" : "border-line"}`}>
-              <input type="radio" name="method" value="telegram" checked={method === "telegram"} onChange={() => setMethod("telegram")} />
-              <div>
-                <p className="font-bold text-ink">Contact via Telegram</p>
-                <p className="text-sm text-muted">Send a message to complete manually</p>
-              </div>
-            </label>
-          </div>
+          {!isFree && (
+            <div className="space-y-3">
+              <label className={`flex items-center gap-4 p-4 rounded-xl border cursor-pointer transition-colors ${method === "card" ? "border-blue bg-page" : "border-line"}`}>
+                <input type="radio" name="method" value="card" checked={method === "card"} onChange={() => setMethod("card")} />
+                <div>
+                  <p className="font-bold text-ink">Card</p>
+                  <p className="text-sm text-muted">Pay securely with Stripe</p>
+                </div>
+              </label>
+              <label className={`flex items-center gap-4 p-4 rounded-xl border cursor-pointer transition-colors ${method === "telegram" ? "border-blue bg-page" : "border-line"}`}>
+                <input type="radio" name="method" value="telegram" checked={method === "telegram"} onChange={() => setMethod("telegram")} />
+                <div>
+                  <p className="font-bold text-ink">Contact via Telegram</p>
+                  <p className="text-sm text-muted">Send a message to complete manually</p>
+                </div>
+              </label>
+            </div>
+          )}
 
           {error && <p className="text-sm text-rose">{error}</p>}
 
           <Button type="submit" className="w-full" isLoading={loading}>
-            {method === "telegram" ? "Open Telegram" : "Pay with card"}
+            {isFree ? "Get it free" : method === "telegram" ? "Open Telegram" : "Pay with card"}
           </Button>
         </form>
       </Card>

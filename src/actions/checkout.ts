@@ -29,8 +29,8 @@ export async function createCheckoutSession(productSlug: string) {
       userId: session.user.id,
       totalAmount: product.price,
       currency: product.currency,
-      paymentProvider: "STRIPE",
-      status: "PENDING",
+      paymentProvider: product.price === 0 ? "MANUAL" : "STRIPE",
+      status: product.price === 0 ? "PAID" : "PENDING",
       items: {
         create: {
           productId: product.id,
@@ -40,6 +40,15 @@ export async function createCheckoutSession(productSlug: string) {
       },
     },
   });
+
+  if (product.price === 0) {
+    await prisma.entitlement.upsert({
+      where: { userId_productId: { userId: session.user.id, productId: product.id } },
+      update: {},
+      create: { userId: session.user.id, productId: product.id, source: "free" },
+    });
+    return { url: `${process.env.NEXTAUTH_URL}/checkout/success?orderId=${order.id}` };
+  }
 
   await prisma.payment.create({
     data: {
