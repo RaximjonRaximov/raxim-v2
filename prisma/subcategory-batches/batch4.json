@@ -1,0 +1,107 @@
+{
+  "batch": 4,
+  "items": [
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Watercolor Painting",
+      "productSlug": "illustration-art-watercolor-painting"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Acrylic Painting",
+      "productSlug": "illustration-art-acrylic-painting"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Gouache Painting",
+      "productSlug": "illustration-art-gouache-painting"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Ink / Line Art",
+      "productSlug": "illustration-art-ink-line-art"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Sketch / Pencil Drawing",
+      "productSlug": "illustration-art-sketch-pencil-drawing"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Charcoal Drawing",
+      "productSlug": "illustration-art-charcoal-drawing"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Pastel Drawing",
+      "productSlug": "illustration-art-pastel-drawing"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Botanical Illustration",
+      "productSlug": "illustration-art-botanical-illustration"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Scientific / Medical Illustration",
+      "productSlug": "illustration-art-scientific-medical-illustration"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Children's Book Illustration",
+      "productSlug": "illustration-art-children-s-book-illustration"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Comic Book Art",
+      "productSlug": "illustration-art-comic-book-art"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Manga / Anime",
+      "productSlug": "illustration-art-manga-anime"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Cartoon / Vector Art",
+      "productSlug": "illustration-art-cartoon-vector-art"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Propaganda Poster",
+      "productSlug": "illustration-art-propaganda-poster"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Retro / Vintage Illustration",
+      "productSlug": "illustration-art-retro-vintage-illustration"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Ukiyo-e / Japanese Woodblock",
+      "productSlug": "illustration-art-ukiyo-e-japanese-woodblock"
+    },
+    {
+      "categoryTitle": "Illustration & Art",
+      "categorySlug": "illustration-art",
+      "subcategoryTitle": "Pixel Art",
+      "productSlug": "illustration-art-pixel-art"
+    }
+  ]
+}

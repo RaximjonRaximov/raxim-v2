@@ -1,0 +1,107 @@
+{
+  "batch": 15,
+  "items": [
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "Vintage Photography",
+      "productSlug": "vintage-retro-vintage-photography"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "Retro Illustration",
+      "productSlug": "vintage-retro-retro-illustration"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "Polaroid / Instant Film",
+      "productSlug": "vintage-retro-polaroid-instant-film"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "Analog / 35mm Film",
+      "productSlug": "vintage-retro-analog-35mm-film"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "80s Aesthetic",
+      "productSlug": "vintage-retro-80s-aesthetic"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "90s Aesthetic",
+      "productSlug": "vintage-retro-90s-aesthetic"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "70s Hippie / Disco",
+      "productSlug": "vintage-retro-70s-hippie-disco"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "60s Mod / Psychedelic",
+      "productSlug": "vintage-retro-60s-mod-psychedelic"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "50s Mid-Century",
+      "productSlug": "vintage-retro-50s-mid-century"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "40s Film Noir",
+      "productSlug": "vintage-retro-40s-film-noir"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "20s Art Deco",
+      "productSlug": "vintage-retro-20s-art-deco"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "Victorian / Edwardian",
+      "productSlug": "vintage-retro-victorian-edwardian"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "Pin-up Art",
+      "productSlug": "vintage-retro-pin-up-art"
+    },
+    {
+      "categoryTitle": "Vintage & Retro",
+      "categorySlug": "vintage-retro",
+      "subcategoryTitle": "Retro Futurism",
+      "productSlug": "vintage-retro-retro-futurism"
+    },
+    {
+      "categoryTitle": "Video & Cinematic",
+      "categorySlug": "video-cinematic",
+      "subcategoryTitle": "Movie Still / Film Look",
+      "productSlug": "video-cinematic-movie-still-film-look"
+    },
+    {
+      "categoryTitle": "Video & Cinematic",
+      "categorySlug": "video-cinematic",
+      "subcategoryTitle": "Music Video Still",
+      "productSlug": "video-cinematic-music-video-still"
+    },
+    {
+      "categoryTitle": "Video & Cinematic",
+      "categorySlug": "video-cinematic",
+      "subcategoryTitle": "Documentary Style",
+      "productSlug": "video-cinematic-documentary-style"
+    }
+  ]
+}

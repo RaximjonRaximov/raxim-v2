@@ -1,0 +1,107 @@
+{
+  "batch": 17,
+  "items": [
+    {
+      "categoryTitle": "3D & Rendering",
+      "categorySlug": "3d-rendering",
+      "subcategoryTitle": "Isometric 3D",
+      "productSlug": "3d-rendering-isometric-3d"
+    },
+    {
+      "categoryTitle": "3D & Rendering",
+      "categorySlug": "3d-rendering",
+      "subcategoryTitle": "Motion Graphics Still",
+      "productSlug": "3d-rendering-motion-graphics-still"
+    },
+    {
+      "categoryTitle": "3D & Rendering",
+      "categorySlug": "3d-rendering",
+      "subcategoryTitle": "NFT / Digital Collectible Style",
+      "productSlug": "3d-rendering-nft-digital-collectible-style"
+    },
+    {
+      "categoryTitle": "Textiles & Patterns",
+      "categorySlug": "textiles-patterns",
+      "subcategoryTitle": "Fabric / Textile Design",
+      "productSlug": "textiles-patterns-fabric-textile-design"
+    },
+    {
+      "categoryTitle": "Textiles & Patterns",
+      "categorySlug": "textiles-patterns",
+      "subcategoryTitle": "Wallpaper / Surface Pattern",
+      "productSlug": "textiles-patterns-wallpaper-surface-pattern"
+    },
+    {
+      "categoryTitle": "Textiles & Patterns",
+      "categorySlug": "textiles-patterns",
+      "subcategoryTitle": "Tile / Mosaic",
+      "productSlug": "textiles-patterns-tile-mosaic"
+    },
+    {
+      "categoryTitle": "Textiles & Patterns",
+      "categorySlug": "textiles-patterns",
+      "subcategoryTitle": "Embroidery / Cross-Stitch",
+      "productSlug": "textiles-patterns-embroidery-cross-stitch"
+    },
+    {
+      "categoryTitle": "Textiles & Patterns",
+      "categorySlug": "textiles-patterns",
+      "subcategoryTitle": "Knitting / Crochet",
+      "productSlug": "textiles-patterns-knitting-crochet"
+    },
+    {
+      "categoryTitle": "Textiles & Patterns",
+      "categorySlug": "textiles-patterns",
+      "subcategoryTitle": "Rug / Carpet Design",
+      "productSlug": "textiles-patterns-rug-carpet-design"
+    },
+    {
+      "categoryTitle": "Textiles & Patterns",
+      "categorySlug": "textiles-patterns",
+      "subcategoryTitle": "Fashion Print",
+      "productSlug": "textiles-patterns-fashion-print"
+    },
+    {
+      "categoryTitle": "Textiles & Patterns",
+      "categorySlug": "textiles-patterns",
+      "subcategoryTitle": "Batik / Ikat",
+      "productSlug": "textiles-patterns-batik-ikat"
+    },
+    {
+      "categoryTitle": "Textiles & Patterns",
+      "categorySlug": "textiles-patterns",
+      "subcategoryTitle": "Lace / Macramé",
+      "productSlug": "textiles-patterns-lace-macram"
+    },
+    {
+      "categoryTitle": "Textiles & Patterns",
+      "categorySlug": "textiles-patterns",
+      "subcategoryTitle": "Quilt / Patchwork",
+      "productSlug": "textiles-patterns-quilt-patchwork"
+    },
+    {
+      "categoryTitle": "Educational & Diagrams",
+      "categorySlug": "educational-diagrams",
+      "subcategoryTitle": "Infographic",
+      "productSlug": "educational-diagrams-infographic"
+    },
+    {
+      "categoryTitle": "Educational & Diagrams",
+      "categorySlug": "educational-diagrams",
+      "subcategoryTitle": "Diagram / Chart",
+      "productSlug": "educational-diagrams-diagram-chart"
+    },
+    {
+      "categoryTitle": "Educational & Diagrams",
+      "categorySlug": "educational-diagrams",
+      "subcategoryTitle": "Scientific Illustration",
+      "productSlug": "educational-diagrams-scientific-illustration"
+    },
+    {
+      "categoryTitle": "Educational & Diagrams",
+      "categorySlug": "educational-diagrams",
+      "subcategoryTitle": "Anatomy / Medical",
+      "productSlug": "educational-diagrams-anatomy-medical"
+    }
+  ]
+}

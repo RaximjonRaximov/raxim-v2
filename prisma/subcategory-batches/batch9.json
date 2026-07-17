@@ -1,0 +1,107 @@
+{
+  "batch": 9,
+  "items": [
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Urban / Street Scene",
+      "productSlug": "architecture-environment-urban-street-scene"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Cityscape / Skyline",
+      "productSlug": "architecture-environment-cityscape-skyline"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Landscape / Nature",
+      "productSlug": "architecture-environment-landscape-nature"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Fantasy Environment",
+      "productSlug": "architecture-environment-fantasy-environment"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Sci-Fi Environment",
+      "productSlug": "architecture-environment-sci-fi-environment"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Post-Apocalyptic Environment",
+      "productSlug": "architecture-environment-post-apocalyptic-environment"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Medieval / Castle Environment",
+      "productSlug": "architecture-environment-medieval-castle-environment"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Desert Environment",
+      "productSlug": "architecture-environment-desert-environment"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Forest / Jungle Environment",
+      "productSlug": "architecture-environment-forest-jungle-environment"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Arctic / Snow Environment",
+      "productSlug": "architecture-environment-arctic-snow-environment"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Underwater Environment",
+      "productSlug": "architecture-environment-underwater-environment"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Environment Design",
+      "productSlug": "architecture-environment-environment-design"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Matte Painting",
+      "productSlug": "architecture-environment-matte-painting"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Fashion Editorial",
+      "productSlug": "fashion-beauty-fashion-editorial"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Runway / Couture",
+      "productSlug": "fashion-beauty-runway-couture"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Street Style",
+      "productSlug": "fashion-beauty-street-style"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Lookbook",
+      "productSlug": "fashion-beauty-lookbook"
+    }
+  ]
+}

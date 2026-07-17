@@ -1,0 +1,107 @@
+{
+  "batch": 12,
+  "items": [
+    {
+      "categoryTitle": "Social Media Content",
+      "categorySlug": "social-media-content",
+      "subcategoryTitle": "Fitness / Wellness",
+      "productSlug": "social-media-content-fitness-wellness"
+    },
+    {
+      "categoryTitle": "Social Media Content",
+      "categorySlug": "social-media-content",
+      "subcategoryTitle": "Pet Content",
+      "productSlug": "social-media-content-pet-content"
+    },
+    {
+      "categoryTitle": "Social Media Content",
+      "categorySlug": "social-media-content",
+      "subcategoryTitle": "Seasonal / Holiday",
+      "productSlug": "social-media-content-seasonal-holiday"
+    },
+    {
+      "categoryTitle": "Social Media Content",
+      "categorySlug": "social-media-content",
+      "subcategoryTitle": "Personal Brand / Portrait",
+      "productSlug": "social-media-content-personal-brand-portrait"
+    },
+    {
+      "categoryTitle": "Social Media Content",
+      "categorySlug": "social-media-content",
+      "subcategoryTitle": "Minimalist Brand Aesthetic",
+      "productSlug": "social-media-content-minimalist-brand-aesthetic"
+    },
+    {
+      "categoryTitle": "Social Media Content",
+      "categorySlug": "social-media-content",
+      "subcategoryTitle": "Educational / Infographic",
+      "productSlug": "social-media-content-educational-infographic"
+    },
+    {
+      "categoryTitle": "Social Media Content",
+      "categorySlug": "social-media-content",
+      "subcategoryTitle": "Tech / App Showcase",
+      "productSlug": "social-media-content-tech-app-showcase"
+    },
+    {
+      "categoryTitle": "Social Media Content",
+      "categorySlug": "social-media-content",
+      "subcategoryTitle": "Sustainability / Eco-Friendly",
+      "productSlug": "social-media-content-sustainability-eco-friendly"
+    },
+    {
+      "categoryTitle": "Social Media Content",
+      "categorySlug": "social-media-content",
+      "subcategoryTitle": "User-Generated Content Style",
+      "productSlug": "social-media-content-user-generated-content-style"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Abstract Photography",
+      "productSlug": "abstract-conceptual-abstract-photography"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Abstract Painting",
+      "productSlug": "abstract-conceptual-abstract-painting"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Generative Art",
+      "productSlug": "abstract-conceptual-generative-art"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Fractal Art",
+      "productSlug": "abstract-conceptual-fractal-art"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Data Visualization Art",
+      "productSlug": "abstract-conceptual-data-visualization-art"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Surreal Composition",
+      "productSlug": "abstract-conceptual-surreal-composition"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Dreamlike / Ethereal",
+      "productSlug": "abstract-conceptual-dreamlike-ethereal"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Minimal / Monochrome",
+      "productSlug": "abstract-conceptual-minimal-monochrome"
+    }
+  ]
+}

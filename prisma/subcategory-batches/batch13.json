@@ -1,0 +1,107 @@
+{
+  "batch": 13,
+  "items": [
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Concept Art",
+      "productSlug": "abstract-conceptual-concept-art"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Symbolic / Allegorical",
+      "productSlug": "abstract-conceptual-symbolic-allegorical"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Optical Illusion",
+      "productSlug": "abstract-conceptual-optical-illusion"
+    },
+    {
+      "categoryTitle": "Abstract & Conceptual",
+      "categorySlug": "abstract-conceptual",
+      "subcategoryTitle": "Psychedelic Art",
+      "productSlug": "abstract-conceptual-psychedelic-art"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Landscape",
+      "productSlug": "nature-animals-landscape"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Mountain / Forest",
+      "productSlug": "nature-animals-mountain-forest"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Desert / Tundra",
+      "productSlug": "nature-animals-desert-tundra"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Seascape / Beach",
+      "productSlug": "nature-animals-seascape-beach"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Sunset / Sunrise",
+      "productSlug": "nature-animals-sunset-sunrise"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Flowers / Botanical",
+      "productSlug": "nature-animals-flowers-botanical"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Trees / Plants",
+      "productSlug": "nature-animals-trees-plants"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Wildlife",
+      "productSlug": "nature-animals-wildlife"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Birds",
+      "productSlug": "nature-animals-birds"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Insects / Macro",
+      "productSlug": "nature-animals-insects-macro"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Pets",
+      "productSlug": "nature-animals-pets"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Farm Animals",
+      "productSlug": "nature-animals-farm-animals"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Underwater Life",
+      "productSlug": "nature-animals-underwater-life"
+    }
+  ]
+}

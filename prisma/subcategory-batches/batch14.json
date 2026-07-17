@@ -1,0 +1,107 @@
+{
+  "batch": 14,
+  "items": [
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Coral Reef",
+      "productSlug": "nature-animals-coral-reef"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Weather / Storm",
+      "productSlug": "nature-animals-weather-storm"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "Seasons",
+      "productSlug": "nature-animals-seasons"
+    },
+    {
+      "categoryTitle": "Nature & Animals",
+      "categorySlug": "nature-animals",
+      "subcategoryTitle": "National Park / Wilderness",
+      "productSlug": "nature-animals-national-park-wilderness"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Futuristic City",
+      "productSlug": "technology-sci-fi-futuristic-city"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Cyberpunk",
+      "productSlug": "technology-sci-fi-cyberpunk"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Steampunk",
+      "productSlug": "technology-sci-fi-steampunk"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Space / Cosmos",
+      "productSlug": "technology-sci-fi-space-cosmos"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Robots / Mecha",
+      "productSlug": "technology-sci-fi-robots-mecha"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Drones / UAV",
+      "productSlug": "technology-sci-fi-drones-uav"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Vehicles / Spaceships",
+      "productSlug": "technology-sci-fi-vehicles-spaceships"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "AI / Cyberspace",
+      "productSlug": "technology-sci-fi-ai-cyberspace"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Holograms / Interfaces",
+      "productSlug": "technology-sci-fi-holograms-interfaces"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Biotechnology",
+      "productSlug": "technology-sci-fi-biotechnology"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Retro-Futurism",
+      "productSlug": "technology-sci-fi-retro-futurism"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Sci-Fi Laboratory",
+      "productSlug": "technology-sci-fi-sci-fi-laboratory"
+    },
+    {
+      "categoryTitle": "Technology & Sci-Fi",
+      "categorySlug": "technology-sci-fi",
+      "subcategoryTitle": "Hacker / Terminal Aesthetic",
+      "productSlug": "technology-sci-fi-hacker-terminal-aesthetic"
+    }
+  ]
+}

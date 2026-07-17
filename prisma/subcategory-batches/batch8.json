@@ -1,0 +1,107 @@
+{
+  "batch": 8,
+  "items": [
+    {
+      "categoryTitle": "Game Assets",
+      "categorySlug": "game-assets",
+      "subcategoryTitle": "Top-Down Game Asset",
+      "productSlug": "game-assets-top-down-game-asset"
+    },
+    {
+      "categoryTitle": "Game Assets",
+      "categorySlug": "game-assets",
+      "subcategoryTitle": "Side-Scroller Game Asset",
+      "productSlug": "game-assets-side-scroller-game-asset"
+    },
+    {
+      "categoryTitle": "Game Assets",
+      "categorySlug": "game-assets",
+      "subcategoryTitle": "3D Game Asset",
+      "productSlug": "game-assets-3d-game-asset"
+    },
+    {
+      "categoryTitle": "Game Assets",
+      "categorySlug": "game-assets",
+      "subcategoryTitle": "Loot / Treasure",
+      "productSlug": "game-assets-loot-treasure"
+    },
+    {
+      "categoryTitle": "Game Assets",
+      "categorySlug": "game-assets",
+      "subcategoryTitle": "Crafting Material",
+      "productSlug": "game-assets-crafting-material"
+    },
+    {
+      "categoryTitle": "Game Assets",
+      "categorySlug": "game-assets",
+      "subcategoryTitle": "Potion / Consumable",
+      "productSlug": "game-assets-potion-consumable"
+    },
+    {
+      "categoryTitle": "Game Assets",
+      "categorySlug": "game-assets",
+      "subcategoryTitle": "Particle Effect / VFX",
+      "productSlug": "game-assets-particle-effect-vfx"
+    },
+    {
+      "categoryTitle": "Game Assets",
+      "categorySlug": "game-assets",
+      "subcategoryTitle": "Game Scene / Level Design",
+      "productSlug": "game-assets-game-scene-level-design"
+    },
+    {
+      "categoryTitle": "Game Assets",
+      "categorySlug": "game-assets",
+      "subcategoryTitle": "Game Map / World Map",
+      "productSlug": "game-assets-game-map-world-map"
+    },
+    {
+      "categoryTitle": "Game Assets",
+      "categorySlug": "game-assets",
+      "subcategoryTitle": "Menu / Loading Screen",
+      "productSlug": "game-assets-menu-loading-screen"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Exterior Architecture",
+      "productSlug": "architecture-environment-exterior-architecture"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Interior Architecture",
+      "productSlug": "architecture-environment-interior-architecture"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Architectural Detail",
+      "productSlug": "architecture-environment-architectural-detail"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Modern Architecture",
+      "productSlug": "architecture-environment-modern-architecture"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Vintage / Historical Architecture",
+      "productSlug": "architecture-environment-vintage-historical-architecture"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Brutalist Architecture",
+      "productSlug": "architecture-environment-brutalist-architecture"
+    },
+    {
+      "categoryTitle": "Architecture & Environment",
+      "categorySlug": "architecture-environment",
+      "subcategoryTitle": "Futuristic Architecture",
+      "productSlug": "architecture-environment-futuristic-architecture"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "batch": 20,
+  "items": [
+    {
+      "categoryTitle": "Marketing & Advertising",
+      "categorySlug": "marketing-advertising",
+      "subcategoryTitle": "Testimonial / Review Card",
+      "productSlug": "marketing-advertising-testimonial-review-card"
+    },
+    {
+      "categoryTitle": "Marketing & Advertising",
+      "categorySlug": "marketing-advertising",
+      "subcategoryTitle": "Case Study Visual",
+      "productSlug": "marketing-advertising-case-study-visual"
+    },
+    {
+      "categoryTitle": "Marketing & Advertising",
+      "categorySlug": "marketing-advertising",
+      "subcategoryTitle": "Social Proof Graphic",
+      "productSlug": "marketing-advertising-social-proof-graphic"
+    },
+    {
+      "categoryTitle": "Marketing & Advertising",
+      "categorySlug": "marketing-advertising",
+      "subcategoryTitle": "Lead Magnet Cover",
+      "productSlug": "marketing-advertising-lead-magnet-cover"
+    },
+    {
+      "categoryTitle": "Marketing & Advertising",
+      "categorySlug": "marketing-advertising",
+      "subcategoryTitle": "Coupon / Voucher Design",
+      "productSlug": "marketing-advertising-coupon-voucher-design"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "batch": 10,
+  "items": [
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Accessories / Jewelry",
+      "productSlug": "fashion-beauty-accessories-jewelry"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Beauty / Makeup",
+      "productSlug": "fashion-beauty-beauty-makeup"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Skincare Product",
+      "productSlug": "fashion-beauty-skincare-product"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Hair Style",
+      "productSlug": "fashion-beauty-hair-style"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Nail Art",
+      "productSlug": "fashion-beauty-nail-art"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Vintage Fashion",
+      "productSlug": "fashion-beauty-vintage-fashion"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Swimwear",
+      "productSlug": "fashion-beauty-swimwear"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Lingerie",
+      "productSlug": "fashion-beauty-lingerie"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Activewear / Athleisure",
+      "productSlug": "fashion-beauty-activewear-athleisure"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Formal Wear / Evening Gown",
+      "productSlug": "fashion-beauty-formal-wear-evening-gown"
+    },
+    {
+      "categoryTitle": "Fashion & Beauty",
+      "categorySlug": "fashion-beauty",
+      "subcategoryTitle": "Menswear / Suiting",
+      "productSlug": "fashion-beauty-menswear-suiting"
+    },
+    {
+      "categoryTitle": "Product & Commercial",
+      "categorySlug": "product-commercial",
+      "subcategoryTitle": "Product Photography",
+      "productSlug": "product-commercial-product-photography"
+    },
+    {
+      "categoryTitle": "Product & Commercial",
+      "categorySlug": "product-commercial",
+      "subcategoryTitle": "E-commerce Product",
+      "productSlug": "product-commercial-e-commerce-product"
+    },
+    {
+      "categoryTitle": "Product & Commercial",
+      "categorySlug": "product-commercial",
+      "subcategoryTitle": "Cosmetics Product",
+      "productSlug": "product-commercial-cosmetics-product"
+    },
+    {
+      "categoryTitle": "Product & Commercial",
+      "categorySlug": "product-commercial",
+      "subcategoryTitle": "Tech / Gadget Product",
+      "productSlug": "product-commercial-tech-gadget-product"
+    },
+    {
+      "categoryTitle": "Product & Commercial",
+      "categorySlug": "product-commercial",
+      "subcategoryTitle": "Food / Beverage Product",
+      "productSlug": "product-commercial-food-beverage-product"
+    },
+    {
+      "categoryTitle": "Product & Commercial",
+      "categorySlug": "product-commercial",
+      "subcategoryTitle": "Apparel Product",
+      "productSlug": "product-commercial-apparel-product"
+    }
+  ]
+}
