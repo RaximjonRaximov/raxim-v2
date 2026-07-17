@@ -27,7 +27,7 @@ export default async function PromptsPage() {
             <p className="font-mono text-[10px] uppercase tracking-label text-lime mb-2">Bundle</p>
             <h2 className="text-2xl font-bold tracking-tight">{bundle.title}</h2>
             <p className="mt-2 text-white/70">Every prompt pack in one place. Save big and unlock the full library.</p>
-            <p className="mt-4 text-2xl font-bold">${(bundle.price / 100).toFixed(2)}</p>
+            <p className="mt-4 text-2xl font-bold">{bundle.price === 0 ? "Free" : `$${(bundle.price / 100).toFixed(2)}`}</p>
           </div>
           <div className="absolute right-0 top-0 w-64 h-full bg-gradient-to-l from-blue/20 to-transparent" />
         </div>

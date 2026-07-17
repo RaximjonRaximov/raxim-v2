@@ -1,0 +1,1444 @@
+{
+  "prompts": [
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Character",
+      "title": "Stylized Hero Character",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] 3D character of a [subject], [color] color palette, [lighting] lighting, [detail] surface detail, [angle] view, clean studio background, subsurface scattering, high-quality 3D render",
+      "filledImagePrompt": "A stylized 3D character of a young adventurer with a backpack, warm orange and teal color palette, three-point studio lighting, fine fabric surface detail, three-quarter front view, clean studio background, subsurface scattering, high-quality 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Character",
+      "title": "Cute Creature Render",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] 3D character of a [subject], big expressive eyes, [color] palette, [mood] mood, soft [lighting], [texture] surface, centered composition, adorable collectible 3D render",
+      "filledImagePrompt": "A chibi 3D character of a fluffy round dragon, big expressive eyes, pastel mint and pink palette, cheerful mood, soft ambient lighting, plush velvet surface, centered composition, adorable collectible 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Character",
+      "title": "Realistic Warrior Bust",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A photorealistic 3D character bust of a [subject], [detail] skin and armor detail, [lighting] lighting, [mood] expression, [color] tones, dramatic [angle], PBR materials, cinematic 3D render",
+      "filledImagePrompt": "A photorealistic 3D character bust of a battle-worn female knight, intricate skin pore and scratched-armor detail, moody rim lighting, determined expression, cold steel-blue tones, dramatic low angle, PBR materials, cinematic 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Environment",
+      "title": "Sci-Fi Corridor Render",
+      "aspectRatio": "21:9",
+      "reusablePrompt": "A [mood] 3D [setting] environment, [lighting] lighting, [color] accent lights, [detail] materials, [angle] camera, volumetric fog, physically based rendering, cinematic 3D scene",
+      "filledImagePrompt": "A moody 3D spaceship corridor environment, dramatic rim lighting, cyan accent lights, brushed-metal and glass materials, low wide-angle camera, volumetric fog, physically based rendering, cinematic 3D scene"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Environment",
+      "title": "Cozy Interior Diorama",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] 3D [setting] diorama, [lighting] lighting, [color] palette, [props], [detail] textures, isometric-friendly composition, warm cozy atmosphere, high-quality 3D render",
+      "filledImagePrompt": "A miniature 3D reading-nook diorama, warm afternoon window lighting, cream and terracotta palette, tiny bookshelf and armchair props, soft fabric and wood textures, isometric-friendly composition, warm cozy atmosphere, high-quality 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Environment",
+      "title": "Fantasy Floating Island",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [mood] 3D fantasy [setting], [lighting] lighting, [color] atmosphere, [detail] terrain, [angle] camera, drifting clouds, epic scale, stylized 3D render",
+      "filledImagePrompt": "A dreamy 3D fantasy floating island, golden-hour lighting, lush green and amber atmosphere, detailed mossy cliff terrain, sweeping aerial camera, drifting clouds, epic scale, stylized 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Product Render",
+      "title": "Floating Perfume Bottle",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] 3D product render of a [subject], [color] background, [lighting] studio lighting, [texture] surface, [composition] composition, soft reflections, ray-traced shadows, ultra-clean commercial 3D render",
+      "filledImagePrompt": "A minimalist 3D product render of a glass perfume bottle, gradient blush-pink background, soft box studio lighting, frosted-glass surface, centered floating composition, soft reflections, ray-traced shadows, ultra-clean commercial 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Product Render",
+      "title": "Sneaker Hero Render",
+      "aspectRatio": "3:2",
+      "reusablePrompt": "A [style] 3D render of a [subject], [color] scene, [lighting], dynamic [angle], [texture] materials, floating pedestal, crisp reflections, premium product 3D visualization",
+      "filledImagePrompt": "A hyper-detailed 3D render of a futuristic running sneaker, gradient purple scene, studio softbox lighting, dynamic low hero angle, knit-mesh and rubber materials, floating pedestal, crisp reflections, premium product 3D visualization"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Product Render",
+      "title": "Cosmetic Jar Set",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] 3D product render of [subject], [color] backdrop, [lighting], [props], [texture] finish, clean commercial composition, soft shadows, high-end 3D visualization",
+      "filledImagePrompt": "A luxury 3D product render of a skincare cream jar set, soft beige backdrop, diffused studio lighting, minimalist stone and leaf props, matte ceramic finish, clean commercial composition, soft shadows, high-end 3D visualization"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Typography",
+      "title": "Balloon Letter Render",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] 3D typography of the word [subject], [color] gradient, [texture] material, [lighting], soft shadows, playful [composition], glossy render, high-resolution 3D lettering",
+      "filledImagePrompt": "A glossy inflatable 3D typography of the word LOVE, pink-to-orange gradient, balloon rubber material, soft studio lighting, soft shadows, playful centered composition, glossy render, high-resolution 3D lettering"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Typography",
+      "title": "Chrome Liquid Text",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] 3D chrome typography spelling [subject], [color] reflections, [lighting], [texture] surface, dramatic [angle], liquid metal drips, cinematic 3D lettering render",
+      "filledImagePrompt": "A bold 3D chrome typography spelling FLOW, iridescent rainbow reflections, high-contrast studio lighting, mirror-liquid surface, dramatic three-quarter angle, liquid metal drips, cinematic 3D lettering render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Clay Render",
+      "title": "Clay Character Study",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] clay render of a [subject], matte [color] clay material, [lighting], soft ambient occlusion, [angle] view, no textures, sculptural [mood], clean clay 3D render",
+      "filledImagePrompt": "A minimalist clay render of a seated meditating figure, matte off-white clay material, soft north-window lighting, soft ambient occlusion, three-quarter view, no textures, calm sculptural mood, clean clay 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Clay Render",
+      "title": "Monochrome Clay Scene",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] clay render of a [setting], uniform [color] clay, [lighting], [props], soft shadows, matte finish, minimalist [composition], tactile clay 3D render",
+      "filledImagePrompt": "A cozy clay render of a small kitchen scene, uniform terracotta clay, soft diffused lighting, tiny pot and mug props, soft shadows, matte finish, minimalist centered composition, tactile clay 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Voxel Art",
+      "title": "Voxel Island Scene",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] voxel art [setting], [color] palette, blocky cubes, [lighting], [props], isometric [angle], playful [mood], crisp voxel 3D render",
+      "filledImagePrompt": "A vibrant voxel art tropical island, saturated turquoise and green palette, blocky cubes, soft daylight lighting, palm tree and treasure chest props, isometric angle, playful cheerful mood, crisp voxel 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Voxel Art",
+      "title": "Voxel Character Pack",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] voxel character of a [subject], [color] blocks, [lighting], simple [detail], front [angle], neutral background, cute game-ready voxel 3D render",
+      "filledImagePrompt": "A retro voxel character of a pixel knight, bright primary-color blocks, soft ambient lighting, simple cube detailing, front angle, neutral gray background, cute game-ready voxel 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Low Poly Art",
+      "title": "Low Poly Landscape",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] low poly [setting], flat-shaded [color] triangles, [lighting], minimal [detail], [angle] view, geometric mountains, calm [mood], clean low poly 3D render",
+      "filledImagePrompt": "A serene low poly mountain valley, flat-shaded pastel-blue and pink triangles, soft sunset lighting, minimal detailing, wide angle view, geometric mountains, calm mood, clean low poly 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Low Poly Art",
+      "title": "Low Poly Animal",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] low poly [subject], faceted [color] surfaces, [lighting], simple [composition], neutral background, geometric [mood], clean low poly 3D render",
+      "filledImagePrompt": "A charming low poly fox, faceted orange and white surfaces, soft studio lighting, simple centered composition, neutral background, playful geometric mood, clean low poly 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Photorealistic Render",
+      "title": "Photoreal Interior",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A photorealistic 3D render of a [setting], [lighting], [color] palette, [texture] materials, [props], realistic global illumination, [angle] camera, architectural visualization render",
+      "filledImagePrompt": "A photorealistic 3D render of a modern living room, warm afternoon sunlight, warm neutral palette, oak wood and linen materials, sofa and plant props, realistic global illumination, eye-level camera, architectural visualization render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Photorealistic Render",
+      "title": "Photoreal Food Plate",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A photorealistic 3D render of [subject], [lighting], [color] scene, [texture] detail, appetizing [composition], shallow depth of field, ultra-realistic CGI food render",
+      "filledImagePrompt": "A photorealistic 3D render of a stacked pancake breakfast, soft morning lighting, warm wooden-table scene, glistening syrup texture detail, appetizing overhead-angled composition, shallow depth of field, ultra-realistic CGI food render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Stylized Render",
+      "title": "Stylized Game Prop",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] stylized 3D [subject], hand-painted [texture], [color] palette, [lighting], exaggerated [detail], game-ready [composition], crisp stylized 3D render",
+      "filledImagePrompt": "A painterly stylized 3D treasure chest, hand-painted wood texture, warm gold and brown palette, soft rim lighting, exaggerated bevel detail, game-ready centered composition, crisp stylized 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Stylized Render",
+      "title": "Stylized Nature Scene",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] stylized 3D [setting], [color] palette, [lighting], hand-painted [texture], whimsical [mood], [angle] view, vibrant stylized 3D render",
+      "filledImagePrompt": "A Pixar-inspired stylized 3D mushroom forest, saturated purple and green palette, magical dappled lighting, hand-painted bark texture, whimsical mood, low angle view, vibrant stylized 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Isometric 3D",
+      "title": "Isometric Room",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "An isometric 3D [setting], [color] palette, [lighting], [props], clean [detail], [mood] atmosphere, soft shadows, tidy isometric 3D render",
+      "filledImagePrompt": "An isometric 3D home office, pastel teal and cream palette, soft even lighting, desk, monitor and plant props, clean minimal detail, calm productive atmosphere, soft shadows, tidy isometric 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Isometric 3D",
+      "title": "Isometric City Block",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "An isometric 3D [setting], [color] palette, [lighting], miniature [props], [detail] buildings, playful [mood], clean isometric 3D render",
+      "filledImagePrompt": "An isometric 3D city block, bright candy-colored palette, soft daylight lighting, miniature cars and trees props, detailed low-poly buildings, playful cheerful mood, clean isometric 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Motion Graphics Still",
+      "title": "Abstract Motion Still",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] 3D motion graphics still with [subject], [color] gradient, [lighting], soft [texture] materials, dynamic [composition], depth of field, polished motion design render",
+      "filledImagePrompt": "A modern 3D motion graphics still with flowing organic shapes, blue-to-magenta gradient, soft studio lighting, soft matte and glass materials, dynamic diagonal composition, depth of field, polished motion design render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "Motion Graphics Still",
+      "title": "Liquid Blob Still",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] 3D motion still of [subject], [color] palette, glossy [texture], [lighting], playful [composition], soft shadows, trendy 3D motion design render",
+      "filledImagePrompt": "A trendy 3D motion still of bouncing liquid blobs, coral and cream palette, glossy jelly texture, soft even lighting, playful floating composition, soft shadows, trendy 3D motion design render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "NFT / Digital Collectible Style",
+      "title": "Collectible Avatar",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] 3D collectible avatar of a [subject], [color] background, [props], [detail] accessories, [lighting], bold [composition], glossy digital collectible render",
+      "filledImagePrompt": "A vibrant 3D collectible avatar of a cool cartoon ape, gradient purple background, gold chain and sunglasses props, sharp accessory detail, soft studio lighting, bold centered composition, glossy digital collectible render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "NFT / Digital Collectible Style",
+      "title": "Crystal Collectible",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] 3D collectible of a [subject], translucent [color] crystal [texture], [lighting], glowing [detail], centered [composition], premium digital collectible render",
+      "filledImagePrompt": "A luxurious 3D collectible of a geometric fox head, translucent amethyst crystal texture, dramatic backlighting, glowing inner core detail, centered composition, premium digital collectible render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Product Render",
+      "title": "Tech Gadget Render",
+      "aspectRatio": "3:2",
+      "reusablePrompt": "A [style] 3D render of a [subject], [color] scene, [lighting], [angle], [texture] finish, floating UI elements, crisp reflections, sleek tech product 3D visualization",
+      "filledImagePrompt": "A sleek 3D render of a wireless earbud case, dark gradient scene, cool studio lighting, three-quarter angle, matte aluminum finish, floating UI elements, crisp reflections, sleek tech product 3D visualization"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Environment",
+      "title": "Underwater 3D Scene",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [mood] 3D underwater [setting], [color] light rays, [lighting], [detail] coral, [props], caustic reflections, [angle] camera, immersive 3D render",
+      "filledImagePrompt": "A serene 3D underwater reef scene, turquoise light rays, soft god-ray lighting, detailed coral, fish and bubble props, caustic reflections, low tracking camera, immersive 3D render"
+    },
+    {
+      "categorySlug": "3d-rendering",
+      "subcategory": "3D Character",
+      "title": "Robot Mascot Render",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] 3D [subject] mascot, [color] palette, glossy [texture], [lighting], friendly [mood], [angle] view, clean background, polished mascot 3D render",
+      "filledImagePrompt": "A friendly 3D robot mascot, white and mint palette, glossy plastic texture, soft studio lighting, friendly cheerful mood, three-quarter view, clean gradient background, polished mascot 3D render"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Fabric / Textile Design",
+      "title": "Tropical Leaf Fabric",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] textile pattern of [subject], [color] palette, [detail] linework, repeating [composition], on [texture] fabric, balanced density, print-ready surface pattern",
+      "filledImagePrompt": "A seamless botanical textile pattern of tropical monstera leaves, emerald and gold palette, fine ink linework, repeating half-drop composition, on natural linen fabric, balanced density, print-ready surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Fabric / Textile Design",
+      "title": "Watercolor Floral Print",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] textile print of [subject], soft [color] washes, [mood] feel, repeating [composition], loose [detail], on [texture] fabric, print-ready surface pattern",
+      "filledImagePrompt": "A seamless watercolor textile print of wildflowers and eucalyptus, soft blush and sage washes, romantic feel, repeating scattered composition, loose painterly detail, on cotton fabric, print-ready surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Fabric / Textile Design",
+      "title": "Abstract Terrazzo Cloth",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] textile pattern of [subject], [color] flecks on [color] base, [composition], subtle [texture], print-ready fabric surface pattern",
+      "filledImagePrompt": "A seamless terrazzo textile pattern of irregular stone flecks, coral, mustard and teal flecks on cream base, evenly scattered composition, subtle woven texture, print-ready fabric surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Wallpaper / Surface Pattern",
+      "title": "Art Deco Wallpaper",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A seamless [style] wallpaper pattern of [subject], [color] palette, [detail] linework, repeating [composition], [texture] finish, elegant surface pattern",
+      "filledImagePrompt": "A seamless Art Deco wallpaper pattern of fan and sunburst motifs, emerald and gold palette, crisp geometric linework, repeating symmetrical composition, subtle metallic finish, elegant surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Wallpaper / Surface Pattern",
+      "title": "Botanical Toile Wallpaper",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A seamless [style] toile wallpaper of [subject], monochrome [color], [detail] engraving lines, repeating [composition], [mood] atmosphere, refined surface pattern",
+      "filledImagePrompt": "A seamless toile de Jouy wallpaper of countryside cottages and florals, monochrome indigo on ivory, fine engraving lines, repeating pastoral composition, nostalgic atmosphere, refined surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Wallpaper / Surface Pattern",
+      "title": "Geometric Grid Wallpaper",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] wallpaper pattern of [subject], [color] palette, precise [detail], repeating [composition], flat [texture], modern surface pattern",
+      "filledImagePrompt": "A seamless mid-century wallpaper pattern of interlocking hexagons, mustard, teal and off-white palette, precise clean edges, repeating tessellated composition, flat matte texture, modern surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Tile / Mosaic",
+      "title": "Moroccan Zellige Tile",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] tile pattern of [subject], [color] palette, [detail] geometry, repeating [composition], glazed [texture], authentic tile surface pattern",
+      "filledImagePrompt": "A seamless Moroccan zellige tile pattern of interlocking stars, cobalt, turquoise and white palette, intricate geometry, repeating radial composition, glossy glazed texture, authentic tile surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Tile / Mosaic",
+      "title": "Roman Mosaic Panel",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] mosaic of [subject], small [color] tesserae, [detail] shading, [composition], aged [texture], classical mosaic artwork",
+      "filledImagePrompt": "A Roman-style mosaic of a laurel wreath and birds, small earth-toned tesserae, subtle stone shading, medallion composition, aged grout texture, classical mosaic artwork"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Tile / Mosaic",
+      "title": "Portuguese Azulejo",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] tile pattern of [subject], [color] on white, [detail] brushwork, repeating [composition], glazed [texture], traditional tile surface pattern",
+      "filledImagePrompt": "A seamless Portuguese azulejo tile pattern of scrolling florals, cobalt blue on white, hand-painted brushwork, repeating symmetrical composition, glossy glazed texture, traditional tile surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Embroidery / Cross-Stitch",
+      "title": "Floral Embroidery Patch",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] embroidery design of [subject], [color] threads, [detail] satin stitch, [composition], on [texture] fabric, realistic embroidered texture",
+      "filledImagePrompt": "A folk embroidery design of a blooming rose bouquet, rich red, pink and green threads, dense satin stitch detail, centered composition, on natural linen fabric, realistic embroidered texture"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Embroidery / Cross-Stitch",
+      "title": "Cross-Stitch Sampler",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] cross-stitch pattern of [subject], [color] palette, visible [texture] grid, [composition], on aida cloth, charming handmade cross-stitch look",
+      "filledImagePrompt": "A cottagecore cross-stitch pattern of a little house and flowers, pastel multicolor palette, visible x-stitch grid texture, centered composition, on aida cloth, charming handmade cross-stitch look"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Embroidery / Cross-Stitch",
+      "title": "Embroidered Bird Motif",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] embroidery pattern of [subject], [color] threads, [detail] stitching, repeating [composition], on [texture] background, embroidered surface pattern",
+      "filledImagePrompt": "A seamless folk embroidery pattern of songbirds and vines, jewel-toned threads, chain and satin stitch detail, repeating half-drop composition, on dark navy velvet background, embroidered surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Knitting / Crochet",
+      "title": "Fair Isle Knit Pattern",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] knit pattern of [subject], [color] palette, [detail] stitches, repeating [composition], chunky [texture], cozy knitted surface pattern",
+      "filledImagePrompt": "A seamless Fair Isle knit pattern of snowflakes and reindeer, cream, red and forest-green palette, defined knit stitches, repeating banded composition, chunky wool texture, cozy knitted surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Knitting / Crochet",
+      "title": "Granny Square Crochet",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] crochet pattern of [subject], [color] palette, [detail] loops, repeating [composition], yarn [texture], handmade crochet surface pattern",
+      "filledImagePrompt": "A seamless granny-square crochet pattern of tiled floral squares, vibrant retro rainbow palette, defined yarn loops, repeating grid composition, soft yarn texture, handmade crochet surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Knitting / Crochet",
+      "title": "Cable Knit Texture",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] cable knit [texture] in [color], [detail] braided stitches, repeating [composition], soft [mood], cozy knitted surface pattern",
+      "filledImagePrompt": "A seamless Aran cable knit texture in oatmeal cream, detailed braided and twisted stitches, repeating vertical composition, soft warm mood, cozy knitted surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Rug / Carpet Design",
+      "title": "Persian Rug Design",
+      "aspectRatio": "4:3",
+      "reusablePrompt": "A [style] rug design with [subject], [color] palette, [detail] border, symmetrical [composition], intricate [texture], traditional carpet artwork",
+      "filledImagePrompt": "An ornate Persian rug design with a central medallion and floral field, deep red, navy and gold palette, detailed floral border, symmetrical composition, intricate woven texture, traditional carpet artwork"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Rug / Carpet Design",
+      "title": "Boho Kilim Rug",
+      "aspectRatio": "4:3",
+      "reusablePrompt": "A [style] rug design with [subject], [color] palette, [detail] geometry, repeating [composition], flatweave [texture], bohemian carpet artwork",
+      "filledImagePrompt": "A boho kilim rug design with diamond and zigzag motifs, terracotta, mustard and cream palette, bold geometry, repeating banded composition, flatweave texture, bohemian carpet artwork"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Rug / Carpet Design",
+      "title": "Modern Abstract Rug",
+      "aspectRatio": "4:3",
+      "reusablePrompt": "A [style] rug design of [subject], [color] palette, [composition], soft [texture], contemporary carpet artwork",
+      "filledImagePrompt": "A modern abstract rug design of organic brushstroke shapes, muted sage, blush and charcoal palette, asymmetric composition, soft tufted texture, contemporary carpet artwork"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Fashion Print",
+      "title": "Silk Scarf Print",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] fashion scarf print of [subject], [color] palette, ornate [detail] border, [composition], luxurious [mood], silk print artwork",
+      "filledImagePrompt": "A baroque fashion scarf print of golden chains, tassels and florals, ivory, gold and emerald palette, ornate framed border, symmetrical composition, luxurious opulent mood, silk print artwork"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Fashion Print",
+      "title": "Animal Print Fabric",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] fashion print of [subject], [color] palette, organic [detail], repeating [composition], soft [texture], bold apparel surface pattern",
+      "filledImagePrompt": "A seamless leopard-inspired fashion print of organic spots, tan, brown and black palette, organic irregular detail, repeating scattered composition, soft brushed texture, bold apparel surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Fashion Print",
+      "title": "Retro 70s Print",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] fashion print of [subject], [color] palette, [detail] shapes, repeating [composition], groovy [mood], apparel surface pattern",
+      "filledImagePrompt": "A seamless retro 70s fashion print of swirling florals and waves, burnt orange, mustard and brown palette, bold curved shapes, repeating tessellated composition, groovy nostalgic mood, apparel surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Batik / Ikat",
+      "title": "Indonesian Batik",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] batik pattern of [subject], [color] palette, [detail] wax-resist lines, repeating [composition], crackle [texture], authentic batik surface pattern",
+      "filledImagePrompt": "A seamless Indonesian batik pattern of parang and floral motifs, indigo and cream palette, fine wax-resist lines, repeating diagonal composition, subtle crackle texture, authentic batik surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Batik / Ikat",
+      "title": "Ikat Weave Pattern",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] ikat pattern of [subject], [color] palette, blurred-edge [detail], repeating [composition], woven [texture], ethnic ikat surface pattern",
+      "filledImagePrompt": "A seamless ikat pattern of diamond and arrow motifs, teal, coral and ivory palette, soft blurred-edge detail, repeating vertical composition, woven fabric texture, ethnic ikat surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Batik / Ikat",
+      "title": "African Wax Print",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] wax print of [subject], vibrant [color] palette, bold [detail], repeating [composition], [texture] finish, African-inspired surface pattern",
+      "filledImagePrompt": "A seamless African wax print of concentric circles and leaves, vibrant orange, purple and teal palette, bold outlined detail, repeating grid composition, waxy matte finish, African-inspired surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Lace / Macram\u00e9",
+      "title": "Delicate Lace Pattern",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] lace pattern of [subject], [color] on transparent, [detail] filigree, repeating [composition], fine [texture], elegant lace surface pattern",
+      "filledImagePrompt": "A seamless Chantilly lace pattern of florals and scallops, ivory on transparent, delicate filigree detail, repeating symmetrical composition, fine thread texture, elegant lace surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Lace / Macram\u00e9",
+      "title": "Macram\u00e9 Wall Hanging",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] macram\u00e9 design of [subject], [color] cord, [detail] knots, [composition], natural [texture], boho macram\u00e9 artwork",
+      "filledImagePrompt": "A boho macram\u00e9 design of a layered geometric wall hanging, natural beige cotton cord, intricate square and spiral knots, symmetrical composition, natural fibrous texture, boho macram\u00e9 artwork"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Quilt / Patchwork",
+      "title": "Patchwork Quilt Design",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] patchwork quilt of [subject], [color] palette, [detail] stitching, repeating [composition], fabric [texture], cozy quilt surface pattern",
+      "filledImagePrompt": "A seamless log-cabin patchwork quilt of pieced squares, warm autumn red, orange and cream palette, visible topstitching detail, repeating block composition, cotton fabric texture, cozy quilt surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Quilt / Patchwork",
+      "title": "Hexagon Quilt Pattern",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] quilt pattern of [subject], [color] palette, [detail] seams, repeating [composition], soft [texture], handmade quilt surface pattern",
+      "filledImagePrompt": "A seamless English paper-piecing quilt pattern of hexagon flowers, pastel floral prints palette, neat visible seams, repeating honeycomb composition, soft cotton texture, handmade quilt surface pattern"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Fabric / Textile Design",
+      "title": "Geometric Mudcloth",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A seamless [style] textile pattern of [subject], [color] palette, hand-drawn [detail], repeating [composition], matte [texture], tribal surface pattern",
+      "filledImagePrompt": "A seamless African mudcloth textile pattern of dashes, crosses and zigzags, black on cream palette, hand-drawn imperfect detail, repeating banded composition, matte woven texture, tribal surface pattern"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Infographic",
+      "title": "Water Cycle Infographic",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A clean [style] infographic explaining [subject], [color] palette, labeled [detail] icons, clear [composition], flat vector [medium], readable educational infographic",
+      "filledImagePrompt": "A clean modern infographic explaining the water cycle, blue and teal palette, labeled evaporation, condensation and precipitation icons, clear circular flow composition, flat vector medium, readable educational infographic"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Infographic",
+      "title": "Nutrition Facts Infographic",
+      "aspectRatio": "9:16",
+      "reusablePrompt": "A [style] infographic about [subject], [color] palette, [detail] icons and stats, vertical [composition], flat [medium], clear educational infographic",
+      "filledImagePrompt": "A friendly infographic about a balanced diet, green and orange palette, food group icons and percentage stats, vertical stacked composition, flat vector medium, clear educational infographic"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Infographic",
+      "title": "Recycling Steps Infographic",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] infographic showing [subject], [color] palette, numbered [detail] steps, [composition], flat [medium], eco-friendly educational infographic",
+      "filledImagePrompt": "A minimalist infographic showing how recycling works, green and blue palette, numbered step icons, left-to-right flow composition, flat vector medium, eco-friendly educational infographic"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Diagram / Chart",
+      "title": "Solar System Diagram",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] diagram of [subject], [color] background, labeled [detail], accurate [composition], clean vector [medium], educational science diagram",
+      "filledImagePrompt": "A detailed diagram of the solar system, dark navy space background, labeled planets and orbits, accurate proportional composition, clean vector medium, educational science diagram"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Diagram / Chart",
+      "title": "Flowchart Diagram",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] flowchart of [subject], [color] palette, connected [detail] boxes and arrows, logical [composition], flat [medium], clear process diagram",
+      "filledImagePrompt": "A clean flowchart of a decision-making process, blue and gray palette, connected boxes and directional arrows, logical top-down composition, flat vector medium, clear process diagram"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Diagram / Chart",
+      "title": "Data Bar Chart",
+      "aspectRatio": "3:2",
+      "reusablePrompt": "A [style] chart visualizing [subject], [color] palette, labeled [detail] axes, balanced [composition], flat [medium], professional data chart",
+      "filledImagePrompt": "A modern chart visualizing yearly sales growth, blue-to-purple gradient palette, labeled axes and value tags, balanced composition, flat vector medium, professional data chart"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Scientific Illustration",
+      "title": "Plant Cell Illustration",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] scientific illustration of [subject], [color] palette, labeled [detail] parts, cross-section [composition], clean vector [medium], textbook science illustration",
+      "filledImagePrompt": "A detailed scientific illustration of a plant cell, green and teal palette, labeled nucleus, chloroplast and membrane parts, cross-section composition, clean vector medium, textbook science illustration"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Scientific Illustration",
+      "title": "Butterfly Life Cycle",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] scientific illustration of [subject], [color] palette, labeled [detail] stages, circular [composition], clean [medium], educational science illustration",
+      "filledImagePrompt": "A colorful scientific illustration of a butterfly life cycle, green and amber palette, labeled egg, caterpillar, chrysalis and butterfly stages, circular composition, clean vector medium, educational science illustration"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Scientific Illustration",
+      "title": "Volcano Cross-Section",
+      "aspectRatio": "4:3",
+      "reusablePrompt": "A [style] scientific illustration of a [subject] cross-section, [color] palette, labeled [detail] layers, cutaway [composition], clean [medium], educational geology illustration",
+      "filledImagePrompt": "A detailed scientific illustration of a volcano cross-section, warm red and brown palette, labeled magma chamber, vent and layers, cutaway composition, clean vector medium, educational geology illustration"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Anatomy / Medical",
+      "title": "Human Heart Anatomy",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] medical illustration of [subject], [color] palette, labeled [detail] structures, anatomically accurate [composition], clean [medium], educational anatomy illustration",
+      "filledImagePrompt": "A precise medical illustration of the human heart, red and blue palette, labeled chambers, valves and arteries, anatomically accurate cross-section composition, clean vector medium, educational anatomy illustration"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Anatomy / Medical",
+      "title": "Skeleton Anatomy Chart",
+      "aspectRatio": "9:16",
+      "reusablePrompt": "A [style] medical chart of the [subject], [color] background, labeled [detail] bones, full-body [composition], clean [medium], educational anatomy poster",
+      "filledImagePrompt": "A detailed medical chart of the human skeleton, neutral beige background, labeled major bones, full-body front-view composition, clean vector medium, educational anatomy poster"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Anatomy / Medical",
+      "title": "Muscle System Diagram",
+      "aspectRatio": "9:16",
+      "reusablePrompt": "A [style] medical diagram of the [subject], [color] palette, labeled [detail] muscles, front and back [composition], clean [medium], educational anatomy illustration",
+      "filledImagePrompt": "A detailed medical diagram of the human muscular system, red and pink palette, labeled major muscle groups, front and back composition, clean vector medium, educational anatomy illustration"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Maps / Cartography",
+      "title": "Vintage Treasure Map",
+      "aspectRatio": "4:3",
+      "reusablePrompt": "A [style] map of [subject], [color] palette, [detail] compass and labels, aged [texture], decorative [composition], hand-drawn cartography illustration",
+      "filledImagePrompt": "A vintage treasure map of a mysterious island, sepia and parchment palette, ornate compass rose and hand-lettered labels, aged paper texture, decorative composition, hand-drawn cartography illustration"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Maps / Cartography",
+      "title": "Modern City Map",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] map of [subject], [color] palette, labeled [detail] streets and landmarks, flat [composition], clean vector [medium], modern cartography illustration",
+      "filledImagePrompt": "A minimalist map of a downtown district, muted pastel palette, labeled streets, parks and landmark icons, flat top-down composition, clean vector medium, modern cartography illustration"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Maps / Cartography",
+      "title": "Topographic Trail Map",
+      "aspectRatio": "4:3",
+      "reusablePrompt": "A [style] topographic map of [subject], [color] contour lines, labeled [detail] elevations and trails, [composition], clean [medium], outdoor cartography illustration",
+      "filledImagePrompt": "A detailed topographic map of a mountain trail, green and brown contour lines, labeled elevations and dashed trails, top-down composition, clean vector medium, outdoor cartography illustration"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Timeline",
+      "title": "History Timeline",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] timeline of [subject], [color] palette, chronological [detail] milestones, horizontal [composition], flat [medium], clear educational timeline",
+      "filledImagePrompt": "A clean timeline of major space exploration milestones, deep blue and orange palette, chronological dated markers, horizontal left-to-right composition, flat vector medium, clear educational timeline"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Timeline",
+      "title": "Company Growth Timeline",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] timeline showing [subject], [color] palette, [detail] year markers and icons, zigzag [composition], flat [medium], professional timeline infographic",
+      "filledImagePrompt": "A modern timeline showing a startup's growth journey, teal and coral palette, year markers with milestone icons, zigzag composition, flat vector medium, professional timeline infographic"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Timeline",
+      "title": "Evolution Timeline",
+      "aspectRatio": "21:9",
+      "reusablePrompt": "A [style] timeline illustrating [subject], [color] palette, sequential [detail] stages, horizontal [composition], clean [medium], educational science timeline",
+      "filledImagePrompt": "An illustrative timeline showing human evolution, earthy brown and green palette, sequential silhouette stages, horizontal left-to-right composition, clean vector medium, educational science timeline"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "How-To / Process",
+      "title": "How-To Steps Guide",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] how-to guide for [subject], [color] palette, numbered [detail] illustrations, clear [composition], flat [medium], easy-to-follow process guide",
+      "filledImagePrompt": "A friendly how-to guide for planting a seed, green and brown palette, numbered step illustrations, clear vertical composition, flat vector medium, easy-to-follow process guide"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "How-To / Process",
+      "title": "Recipe Process Steps",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] step-by-step guide for [subject], [color] palette, sequential [detail] icons, grid [composition], flat [medium], clear cooking process infographic",
+      "filledImagePrompt": "A clean step-by-step guide for baking bread, warm cream and wheat palette, sequential ingredient and action icons, grid composition, flat vector medium, clear cooking process infographic"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "How-To / Process",
+      "title": "Origami Instructions",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] how-to diagram for [subject], [color] palette, numbered fold [detail], dashed line [composition], clean [medium], instructional process diagram",
+      "filledImagePrompt": "A minimalist how-to diagram for folding an origami crane, white and blue palette, numbered fold steps, dashed and arrow guideline composition, clean vector medium, instructional process diagram"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Educational Poster",
+      "title": "Alphabet Learning Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] educational poster of [subject], [color] palette, playful [detail] illustrations, grid [composition], flat [medium], kid-friendly educational poster",
+      "filledImagePrompt": "A cheerful educational poster of the alphabet with animals, bright rainbow palette, playful animal illustrations, grid composition, flat vector medium, kid-friendly educational poster"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Educational Poster",
+      "title": "Periodic Table Poster",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] educational poster of [subject], [color]-coded groups, labeled [detail] cells, grid [composition], clean [medium], science classroom poster",
+      "filledImagePrompt": "A clean educational poster of the periodic table, color-coded element groups, labeled symbol and number cells, grid composition, clean vector medium, science classroom poster"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Educational Poster",
+      "title": "Emotions Learning Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] educational poster about [subject], [color] palette, expressive [detail] faces, grid [composition], flat [medium], kid-friendly classroom poster",
+      "filledImagePrompt": "A friendly educational poster about feelings and emotions, soft pastel palette, expressive labeled cartoon faces, grid composition, flat vector medium, kid-friendly classroom poster"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Textbook Illustration",
+      "title": "Photosynthesis Illustration",
+      "aspectRatio": "4:3",
+      "reusablePrompt": "A [style] textbook illustration of [subject], [color] palette, labeled [detail] arrows, clear [composition], clean [medium], educational textbook illustration",
+      "filledImagePrompt": "A clear textbook illustration of photosynthesis, green and yellow palette, labeled sunlight, water and CO2 arrows, clear left-to-right composition, clean vector medium, educational textbook illustration"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Textbook Illustration",
+      "title": "Rock Cycle Illustration",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] textbook illustration of the [subject], [color] palette, labeled [detail] stages, circular [composition], clean [medium], geology textbook illustration",
+      "filledImagePrompt": "A clear textbook illustration of the rock cycle, warm earth-tone palette, labeled igneous, sedimentary and metamorphic stages, circular flow composition, clean vector medium, geology textbook illustration"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Instruction Manual",
+      "title": "Furniture Assembly Manual",
+      "aspectRatio": "4:3",
+      "reusablePrompt": "A [style] instruction manual diagram for [subject], [color] palette, numbered [detail] parts, exploded-view [composition], clean line [medium], clear assembly instructions",
+      "filledImagePrompt": "A minimalist instruction manual diagram for assembling a bookshelf, black and white with blue accents, numbered parts and hardware, exploded-view composition, clean line medium, clear assembly instructions"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Instruction Manual",
+      "title": "Safety Instructions Card",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] instruction card for [subject], [color] palette, icon-based [detail] steps, grid [composition], flat [medium], clear safety instruction diagram",
+      "filledImagePrompt": "A clean instruction card for emergency exit safety, red and white palette, icon-based numbered steps, grid composition, flat vector medium, clear safety instruction diagram"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Infographic",
+      "title": "Comparison Infographic",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] comparison infographic of [subject], [color] split palette, side-by-side [detail], balanced [composition], flat [medium], clear comparison infographic",
+      "filledImagePrompt": "A modern comparison infographic of coffee versus tea, warm brown versus green split palette, side-by-side icons and stats, balanced composition, flat vector medium, clear comparison infographic"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Christmas",
+      "title": "Cozy Christmas Scene",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [mood] [style] Christmas scene of [subject], [color] palette, warm [lighting], festive [props], [composition], seasonal holiday illustration",
+      "filledImagePrompt": "A cozy illustrated Christmas scene of a decorated living room, red, green and gold palette, warm fireplace lighting, tree, stockings and gift props, centered composition, seasonal holiday illustration"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Christmas",
+      "title": "Christmas Greeting Card",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] Christmas greeting card featuring [subject], [color] palette, [detail] snow, [composition], cheerful [mood], festive card design",
+      "filledImagePrompt": "A charming Christmas greeting card featuring a snowman and pine trees, red and white palette, delicate falling snow detail, centered composition, cheerful mood, festive card design"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Christmas",
+      "title": "Christmas Flat Lay",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] Christmas flat lay of [props], [color] palette, [lighting], overhead [angle], [texture] surface, festive holiday photography",
+      "filledImagePrompt": "A cozy Christmas flat lay of ornaments, pine branches and ribbon, red, green and gold palette, soft warm lighting, overhead angle, rustic wood surface, festive holiday photography"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Halloween",
+      "title": "Spooky Halloween Scene",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [mood] Halloween scene of [subject], [color] palette, eerie [lighting], [props], [composition], atmospheric spooky illustration",
+      "filledImagePrompt": "A spooky Halloween scene of a haunted house on a hill, purple and orange palette, eerie moonlight lighting, jack-o-lanterns and bats props, wide composition, atmospheric spooky illustration"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Halloween",
+      "title": "Cute Halloween Characters",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] Halloween illustration of [subject], [color] palette, playful [mood], [props], [composition], kid-friendly Halloween design",
+      "filledImagePrompt": "A cute cartoon Halloween illustration of friendly ghosts and pumpkins, orange and purple palette, playful cheerful mood, candy and hat props, grid composition, kid-friendly Halloween design"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Halloween",
+      "title": "Halloween Party Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] Halloween party poster with [subject], [color] palette, spooky [detail] typography, dramatic [lighting], [composition], eye-catching event poster",
+      "filledImagePrompt": "A retro Halloween party poster with a full moon and silhouettes, black, orange and lime palette, dripping spooky typography, dramatic backlighting, centered composition, eye-catching event poster"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Valentine's Day",
+      "title": "Romantic Valentine Card",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] Valentine's card featuring [subject], [color] palette, [mood] feel, [props], [composition], romantic holiday card design",
+      "filledImagePrompt": "A charming Valentine's card featuring two lovebirds on a branch, blush pink and red palette, romantic tender feel, hearts and flowers props, centered composition, romantic holiday card design"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Valentine's Day",
+      "title": "Heart Flat Lay",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] Valentine's flat lay of [props], [color] palette, soft [lighting], overhead [angle], [texture] surface, romantic holiday photography",
+      "filledImagePrompt": "A dreamy Valentine's flat lay of roses, chocolates and ribbon, soft pink and red palette, soft diffused lighting, overhead angle, marble surface, romantic holiday photography"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Valentine's Day",
+      "title": "Love Typography Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] Valentine's poster with [subject], [color] palette, elegant [detail] lettering, [composition], romantic [mood], decorative typography design",
+      "filledImagePrompt": "A modern Valentine's poster with the phrase Be Mine, blush and gold palette, elegant script lettering, centered composition, romantic mood, decorative typography design"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Easter",
+      "title": "Easter Egg Hunt Scene",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] Easter scene of [subject], [color] pastel palette, soft [lighting], [props], [composition], cheerful spring holiday illustration",
+      "filledImagePrompt": "A cheerful Easter scene of a garden egg hunt, pastel yellow, pink and green palette, soft morning lighting, decorated eggs and bunny props, wide composition, cheerful spring holiday illustration"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Easter",
+      "title": "Easter Greeting Card",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] Easter card featuring [subject], [color] pastel palette, [detail] florals, [composition], sweet [mood], festive spring card design",
+      "filledImagePrompt": "A sweet Easter card featuring a bunny with a basket, pastel lavender and mint palette, delicate spring floral detail, centered composition, joyful mood, festive spring card design"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Easter",
+      "title": "Easter Flat Lay",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] Easter flat lay of [props], [color] pastel palette, soft [lighting], overhead [angle], [texture] surface, spring holiday photography",
+      "filledImagePrompt": "A pretty Easter flat lay of painted eggs, tulips and ribbon, pastel multicolor palette, soft natural lighting, overhead angle, light wood surface, spring holiday photography"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "New Year",
+      "title": "New Year Fireworks",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [mood] New Year scene of [subject], [color] palette, sparkling [lighting], [props], [composition], celebratory holiday illustration",
+      "filledImagePrompt": "A festive New Year scene of fireworks over a city skyline, gold, black and blue palette, sparkling firework lighting, confetti and champagne props, wide composition, celebratory holiday illustration"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "New Year",
+      "title": "New Year Countdown Card",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] New Year card with [subject], [color] palette, glittering [detail], bold [composition], festive [mood], celebratory card design",
+      "filledImagePrompt": "A glamorous New Year card with a big 2026 numeral, black and gold palette, glittering sparkle detail, bold centered composition, festive mood, celebratory card design"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "New Year",
+      "title": "New Year Party Flat Lay",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] New Year flat lay of [props], [color] palette, [lighting], overhead [angle], [texture] surface, festive celebration photography",
+      "filledImagePrompt": "A luxe New Year flat lay of champagne glasses, confetti and streamers, gold and black palette, soft glamorous lighting, overhead angle, dark velvet surface, festive celebration photography"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Thanksgiving",
+      "title": "Thanksgiving Feast Scene",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [mood] Thanksgiving scene of [subject], [color] autumn palette, warm [lighting], [props], [composition], cozy holiday illustration",
+      "filledImagePrompt": "A warm Thanksgiving scene of a family dinner table, orange, brown and gold autumn palette, warm candlelight lighting, turkey, pumpkins and leaves props, wide composition, cozy holiday illustration"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Thanksgiving",
+      "title": "Thanksgiving Card",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] Thanksgiving card featuring [subject], [color] autumn palette, [detail] foliage, [composition], grateful [mood], festive card design",
+      "filledImagePrompt": "A rustic Thanksgiving card featuring a cornucopia of harvest, warm amber and rust palette, detailed autumn foliage, centered composition, grateful cozy mood, festive card design"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Thanksgiving",
+      "title": "Autumn Harvest Flat Lay",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] Thanksgiving flat lay of [props], [color] autumn palette, warm [lighting], overhead [angle], [texture] surface, seasonal holiday photography",
+      "filledImagePrompt": "A rustic Thanksgiving flat lay of pumpkins, wheat and pinecones, warm orange and brown autumn palette, warm golden lighting, overhead angle, weathered wood surface, seasonal holiday photography"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Autumn / Fall",
+      "title": "Autumn Forest Scene",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [mood] autumn [setting], [color] palette, golden [lighting], falling [detail], [composition], cozy fall illustration",
+      "filledImagePrompt": "A serene autumn forest path, warm red, orange and gold palette, golden-hour lighting, drifting falling leaves detail, wide composition, cozy fall illustration"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Autumn / Fall",
+      "title": "Fall Coffee Flat Lay",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] autumn flat lay of [props], [color] palette, warm [lighting], overhead [angle], [texture] surface, cozy fall photography",
+      "filledImagePrompt": "A cozy autumn flat lay of a latte, sweater and maple leaves, warm caramel and rust palette, soft warm lighting, overhead angle, knit blanket surface, cozy fall photography"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Winter",
+      "title": "Snowy Winter Landscape",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [mood] winter [setting], [color] palette, soft [lighting], [detail] snow, [composition], serene winter illustration",
+      "filledImagePrompt": "A peaceful winter landscape of a snowy pine valley, icy blue and white palette, soft dawn lighting, sparkling fresh snow detail, wide composition, serene winter illustration"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Winter",
+      "title": "Winter Cabin Scene",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [mood] winter scene of a [subject], [color] palette, warm [lighting], [props], [composition], cozy winter illustration",
+      "filledImagePrompt": "A cozy winter scene of a snow-covered log cabin, deep blue and warm amber palette, warm glowing window lighting, smoke, pines and lantern props, centered composition, cozy winter illustration"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Spring",
+      "title": "Spring Blossom Scene",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [mood] spring [setting], [color] pastel palette, soft [lighting], blooming [detail], [composition], fresh spring illustration",
+      "filledImagePrompt": "A cheerful spring meadow scene, pastel pink, green and yellow palette, soft morning lighting, blooming wildflowers and blossoms detail, wide composition, fresh spring illustration"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Spring",
+      "title": "Spring Floral Flat Lay",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] spring flat lay of [props], [color] pastel palette, soft [lighting], overhead [angle], [texture] surface, fresh spring photography",
+      "filledImagePrompt": "A bright spring flat lay of tulips, watering can and seeds, pastel pink and green palette, soft natural lighting, overhead angle, white wood surface, fresh spring photography"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Summer",
+      "title": "Tropical Summer Scene",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [mood] summer [setting], [color] palette, bright [lighting], [props], [composition], vibrant summer illustration",
+      "filledImagePrompt": "A vibrant summer beach scene, turquoise, coral and sunny yellow palette, bright midday lighting, palm trees, umbrella and surfboard props, wide composition, vibrant summer illustration"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Summer",
+      "title": "Summer Beach Flat Lay",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] summer flat lay of [props], [color] palette, bright [lighting], overhead [angle], [texture] surface, cheerful summer photography",
+      "filledImagePrompt": "A cheerful summer flat lay of sunglasses, seashells and sunscreen, turquoise and coral palette, bright sunny lighting, overhead angle, sandy beach surface, cheerful summer photography"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Back to School",
+      "title": "Back to School Scene",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] back-to-school illustration of [props], [color] palette, playful [mood], [composition], flat [medium], cheerful seasonal design",
+      "filledImagePrompt": "A playful back-to-school illustration of books, pencils and an apple, primary red, blue and yellow palette, playful energetic mood, centered composition, flat vector medium, cheerful seasonal design"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Back to School",
+      "title": "School Supplies Flat Lay",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] back-to-school flat lay of [props], [color] palette, bright [lighting], overhead [angle], [texture] surface, tidy seasonal photography",
+      "filledImagePrompt": "A neat back-to-school flat lay of notebooks, crayons and scissors, bright multicolor palette, bright even lighting, overhead angle, pastel desk surface, tidy seasonal photography"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Birthday / Celebration",
+      "title": "Birthday Party Scene",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] birthday illustration of [subject], [color] palette, festive [props], joyful [mood], [composition], cheerful celebration design",
+      "filledImagePrompt": "A festive birthday illustration of a layered cake with candles, bright pink, teal and yellow palette, balloons and confetti props, joyful mood, centered composition, cheerful celebration design"
+    },
+    {
+      "categorySlug": "holidays-seasonal",
+      "subcategory": "Wedding / Anniversary",
+      "title": "Elegant Wedding Invite",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "An [style] wedding invitation featuring [subject], [color] palette, elegant [detail] florals, refined [composition], romantic [mood], luxurious invitation design",
+      "filledImagePrompt": "An elegant wedding invitation featuring a floral arch and script names, blush, sage and gold palette, delicate watercolor floral detail, refined centered composition, romantic mood, luxurious invitation design"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Album Cover",
+      "title": "Indie Dream Album",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] album cover featuring [subject], [color] palette, [mood] atmosphere, [lighting], bold [composition], striking album cover art",
+      "filledImagePrompt": "A dreamy indie album cover featuring a lone figure on a hill at dusk, soft lavender and orange palette, nostalgic atmosphere, hazy golden lighting, bold centered composition, striking album cover art"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Album Cover",
+      "title": "Retro Synth Album",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] album cover with [subject], [color] palette, [era] aesthetic, neon [lighting], geometric [composition], retro album cover art",
+      "filledImagePrompt": "A retro synthwave album cover with a chrome sports car and sunset grid, magenta and cyan palette, 80s aesthetic, neon glow lighting, symmetrical geometric composition, retro album cover art"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Album Cover",
+      "title": "Hip-Hop Album Cover",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] album cover featuring [subject], [color] palette, bold [detail] typography, [mood], [composition], striking hip-hop album cover art",
+      "filledImagePrompt": "A bold hip-hop album cover featuring a gold chain and city backdrop, black and gold palette, bold graffiti typography, confident mood, centered composition, striking hip-hop album cover art"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Album Cover",
+      "title": "Minimal Jazz Album",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] minimalist album cover of [subject], [color] palette, [mood] atmosphere, simple [composition], elegant jazz album cover art",
+      "filledImagePrompt": "A minimalist jazz album cover of a single trumpet silhouette, warm mustard and black palette, smoky moody atmosphere, simple off-center composition, elegant jazz album cover art"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Concert Poster",
+      "title": "Rock Concert Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] concert poster for [subject], [color] palette, bold [detail] typography, energetic [mood], [composition], eye-catching gig poster",
+      "filledImagePrompt": "A gritty rock concert poster for a live band, black, red and cream palette, bold distressed typography, energetic rebellious mood, centered composition, eye-catching gig poster"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Concert Poster",
+      "title": "Psychedelic Gig Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] concert poster with [subject], [color] palette, swirling [detail], [era] aesthetic, [composition], trippy gig poster",
+      "filledImagePrompt": "A psychedelic concert poster with liquid swirls and a sun face, vivid orange, pink and purple palette, swirling ornate lettering, 60s aesthetic, symmetrical composition, trippy gig poster"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Concert Poster",
+      "title": "EDM Festival Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] concert poster for [subject], [color] palette, glowing [lighting], bold [detail] type, dynamic [composition], hype electronic music poster",
+      "filledImagePrompt": "A high-energy concert poster for an EDM night, electric blue and magenta palette, glowing neon lighting, bold futuristic type, dynamic diagonal composition, hype electronic music poster"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Music Artist Portrait",
+      "title": "Moody Artist Portrait",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] music artist portrait of a [subject], [color] palette, dramatic [lighting], [mood] expression, [angle], cinematic artist portrait",
+      "filledImagePrompt": "A cinematic music artist portrait of a soul singer, deep teal and amber palette, dramatic single-source lighting, introspective expression, close-up angle, cinematic artist portrait"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Music Artist Portrait",
+      "title": "Neon Pop Portrait",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] music artist portrait of a [subject], [color] neon palette, colorful [lighting], confident [mood], [angle], vibrant pop artist portrait",
+      "filledImagePrompt": "A vibrant music artist portrait of a pop star, pink and blue neon palette, colorful gel lighting, confident playful mood, three-quarter angle, vibrant pop artist portrait"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Festival / Event",
+      "title": "Music Festival Key Art",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] festival key art of [subject], [color] palette, vibrant [lighting], [props], energetic [mood], [composition], eye-catching event key visual",
+      "filledImagePrompt": "A vibrant music festival key art of a crowd and stage at sunset, sunset orange and purple palette, vibrant stage lighting, balloons and flags props, energetic joyful mood, wide composition, eye-catching event key visual"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Festival / Event",
+      "title": "Summer Fest Banner",
+      "aspectRatio": "21:9",
+      "reusablePrompt": "A [style] festival banner featuring [subject], [color] palette, bright [lighting], playful [detail] type, [composition], lively event banner",
+      "filledImagePrompt": "A lively festival banner featuring palm silhouettes and a stage, tropical coral and teal palette, bright sunny lighting, playful bubbly type, wide composition, lively event banner"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Book Cover",
+      "title": "Fantasy Novel Cover",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] book cover for a [subject], [color] palette, atmospheric [lighting], ornate [detail] title, [composition], captivating book cover design",
+      "filledImagePrompt": "A dramatic book cover for an epic fantasy novel, deep emerald and gold palette, atmospheric misty lighting, ornate embossed title, centered composition, captivating book cover design"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Book Cover",
+      "title": "Thriller Book Cover",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] book cover for a [subject], [color] palette, tense [mood], dramatic [lighting], bold [composition], gripping book cover design",
+      "filledImagePrompt": "A minimalist book cover for a psychological thriller, black, white and red palette, tense unsettling mood, harsh shadow lighting, bold off-center composition, gripping book cover design"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Book Cover",
+      "title": "Romance Book Cover",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] book cover for a [subject], [color] palette, soft [lighting], romantic [mood], [composition], charming book cover design",
+      "filledImagePrompt": "A charming book cover for a summer romance, warm coral and cream palette, soft golden lighting, romantic wistful mood, centered composition, charming book cover design"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Movie Poster",
+      "title": "Sci-Fi Movie Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] movie poster for a [subject], [color] palette, cinematic [lighting], epic [composition], dramatic [mood], blockbuster movie poster",
+      "filledImagePrompt": "A cinematic movie poster for a space epic, cold blue and orange palette, dramatic backlighting, epic low-angle composition, awe-inspiring mood, blockbuster movie poster"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Movie Poster",
+      "title": "Horror Movie Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] movie poster for a [subject], [color] palette, eerie [lighting], unsettling [mood], [composition], chilling horror movie poster",
+      "filledImagePrompt": "A chilling movie poster for a haunted-house horror, desaturated green and black palette, eerie underlighting, dread-filled mood, centered composition, chilling horror movie poster"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Movie Poster",
+      "title": "Indie Drama Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] movie poster for an [subject], [color] palette, natural [lighting], intimate [mood], minimal [composition], understated indie film poster",
+      "filledImagePrompt": "A minimalist movie poster for an indie coming-of-age drama, warm muted pastel palette, natural window lighting, intimate reflective mood, minimal composition, understated indie film poster"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Podcast Cover",
+      "title": "True Crime Podcast",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] podcast cover for a [subject], [color] palette, moody [lighting], bold [detail] title, [composition], striking podcast cover art",
+      "filledImagePrompt": "A moody podcast cover for a true crime show, dark navy and blood-red palette, moody spotlight lighting, bold serif title, centered composition, striking podcast cover art"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Podcast Cover",
+      "title": "Wellness Podcast Cover",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] podcast cover for a [subject], [color] palette, soft [lighting], calming [mood], clean [composition], friendly podcast cover art",
+      "filledImagePrompt": "A calming podcast cover for a mindfulness show, soft sage and cream palette, soft natural lighting, serene mood, clean centered composition, friendly podcast cover art"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Podcast Cover",
+      "title": "Comedy Podcast Cover",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] podcast cover for a [subject], [color] palette, playful [mood], bold [detail] type, [composition], fun podcast cover art",
+      "filledImagePrompt": "A playful podcast cover for a comedy show, bright yellow and coral palette, playful goofy mood, bold rounded type, centered composition, fun podcast cover art"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Gaming Stream Overlay",
+      "title": "Neon Stream Overlay",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] gaming stream overlay with [subject], [color] palette, glowing [lighting], [detail] frames, clean [composition], modern stream overlay design",
+      "filledImagePrompt": "A sleek gaming stream overlay with webcam and chat frames, purple and cyan neon palette, glowing edge lighting, hexagonal accent frames, clean balanced composition, modern stream overlay design"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Gaming Stream Overlay",
+      "title": "Retro Stream Overlay",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] gaming stream overlay with [subject], [color] palette, pixel [detail], [era] aesthetic, tidy [composition], retro stream overlay design",
+      "filledImagePrompt": "A retro gaming stream overlay with pixel borders and icons, teal, magenta and cream palette, crisp pixel detail, 8-bit aesthetic, tidy composition, retro stream overlay design"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Stage Design",
+      "title": "Concert Stage Design",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] concert stage design with [subject], [color] palette, dramatic [lighting], [props], epic [composition], immersive stage design render",
+      "filledImagePrompt": "A grand concert stage design with LED walls and risers, electric blue and white palette, dramatic beam lighting, lasers and pyro props, epic wide composition, immersive stage design render"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Stage Design",
+      "title": "Theater Stage Set",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] theater stage set of a [setting], [color] palette, atmospheric [lighting], [props], balanced [composition], dramatic stage set design",
+      "filledImagePrompt": "A romantic theater stage set of a moonlit garden, deep blue and silver palette, atmospheric soft lighting, arches, vines and bench props, balanced composition, dramatic stage set design"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Merchandise Art",
+      "title": "Band Tour Tee Art",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] band merch design featuring [subject], [color] palette, bold [detail] typography, [composition], screen-print-ready merch art",
+      "filledImagePrompt": "A vintage band merch design featuring a flaming skull and roses, cream, red and black palette, bold arched typography, centered composition, screen-print-ready merch art"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Merchandise Art",
+      "title": "Tour Poster Merch",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] tour merch poster listing [subject], [color] palette, retro [detail] type, [composition], collectible tour poster art",
+      "filledImagePrompt": "A retro tour merch poster listing city dates, mustard, teal and cream palette, retro condensed type, stacked centered composition, collectible tour poster art"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Album Cover",
+      "title": "Ambient Nature Album",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] album cover of [subject], [color] palette, [mood] atmosphere, soft [lighting], minimal [composition], serene album cover art",
+      "filledImagePrompt": "A serene ambient album cover of misty mountains, muted blue-gray palette, meditative atmosphere, soft foggy lighting, minimal composition, serene album cover art"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Music Artist Portrait",
+      "title": "Vintage Vinyl Portrait",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] music artist portrait of a [subject], [color] palette, warm [lighting], [era] aesthetic, [angle], nostalgic artist portrait",
+      "filledImagePrompt": "A nostalgic music artist portrait of a folk singer with a guitar, warm sepia and amber palette, warm vintage lighting, 70s aesthetic, medium angle, nostalgic artist portrait"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Festival / Event",
+      "title": "Jazz Night Poster",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] event poster for a [subject], [color] palette, moody [lighting], elegant [detail] type, [composition], sophisticated event poster",
+      "filledImagePrompt": "An elegant event poster for a jazz night, deep burgundy and gold palette, moody smoky lighting, elegant art-deco type, centered composition, sophisticated event poster"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Ad Creative",
+      "title": "Product Hero Ad",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] ad creative featuring [subject], [color] palette, punchy [detail] headline space, clean [lighting], bold [composition], high-converting ad creative",
+      "filledImagePrompt": "A modern ad creative featuring a sleek water bottle, fresh mint and white palette, punchy headline space, clean studio lighting, bold centered composition, high-converting ad creative"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Ad Creative",
+      "title": "Lifestyle Product Ad",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] lifestyle ad of [subject] in [setting], [color] palette, natural [lighting], aspirational [mood], [composition], engaging social ad creative",
+      "filledImagePrompt": "A warm lifestyle ad of a coffee cup on a cafe table, warm caramel and cream palette, natural window lighting, cozy aspirational mood, rule-of-thirds composition, engaging social ad creative"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Ad Creative",
+      "title": "App Promo Ad",
+      "aspectRatio": "9:16",
+      "reusablePrompt": "A [style] app promo ad showing [subject], [color] palette, floating [props] mockups, bold [detail] text space, [composition], modern app ad creative",
+      "filledImagePrompt": "A vibrant app promo ad showing a phone with a fitness app, teal and coral palette, floating UI card mockups, bold benefit text space, vertical stacked composition, modern app ad creative"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Banner / Billboard",
+      "title": "Highway Billboard Ad",
+      "aspectRatio": "21:9",
+      "reusablePrompt": "A [style] billboard design for [subject], [color] palette, huge [detail] headline, bold [composition], minimal copy, high-impact billboard ad",
+      "filledImagePrompt": "A bold billboard design for a new electric car, deep blue and lime palette, huge punchy headline, bold left-aligned composition, minimal copy, high-impact billboard ad"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Banner / Billboard",
+      "title": "Web Banner Ad",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] web banner for [subject], [color] palette, clear [detail] CTA button, balanced [composition], clean [medium], click-worthy banner ad",
+      "filledImagePrompt": "A clean web banner for a summer sale, sunny yellow and coral palette, clear Shop Now CTA button, balanced left-text composition, flat vector medium, click-worthy banner ad"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Banner / Billboard",
+      "title": "Retargeting Display Ad",
+      "aspectRatio": "3:2",
+      "reusablePrompt": "A [style] display ad for [subject], [color] palette, product [props], bold [detail] offer, compact [composition], effective retargeting ad",
+      "filledImagePrompt": "A crisp display ad for wireless headphones, charcoal and orange palette, floating product shot, bold 20% off offer, compact composition, effective retargeting ad"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Email Header",
+      "title": "Newsletter Email Header",
+      "aspectRatio": "3:2",
+      "reusablePrompt": "A [style] email header for a [subject], [color] palette, friendly [detail] illustration, clear [composition], flat [medium], welcoming email header design",
+      "filledImagePrompt": "A friendly email header for a monthly newsletter, soft blue and cream palette, friendly desk illustration, clear centered composition, flat vector medium, welcoming email header design"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Email Header",
+      "title": "Promo Email Header",
+      "aspectRatio": "3:2",
+      "reusablePrompt": "A [style] email header announcing [subject], [color] palette, bold [detail] headline, festive [mood], [composition], attention-grabbing email header",
+      "filledImagePrompt": "A bold email header announcing a flash sale, red and gold palette, bold sale headline, festive urgent mood, centered composition, attention-grabbing email header"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Email Header",
+      "title": "Welcome Email Header",
+      "aspectRatio": "3:2",
+      "reusablePrompt": "A [style] email header for a [subject], [color] palette, warm [mood], simple [detail] graphic, [composition], inviting email header design",
+      "filledImagePrompt": "A cheerful email header for a new subscriber welcome, warm peach and teal palette, warm friendly mood, simple waving-hand graphic, centered composition, inviting email header design"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Landing Page Visual",
+      "title": "SaaS Hero Visual",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] landing page hero visual for [subject], [color] palette, clean [props] mockup, ample [detail] text space, [composition], conversion-focused hero visual",
+      "filledImagePrompt": "A modern landing page hero visual for a project-management SaaS, indigo and white palette, clean dashboard mockup, ample headline text space, split composition, conversion-focused hero visual"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Landing Page Visual",
+      "title": "Course Landing Visual",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] landing page visual for an [subject], [color] palette, friendly [detail] illustration, clear [composition], flat [medium], engaging landing page hero",
+      "filledImagePrompt": "A friendly landing page visual for an online design course, warm purple and yellow palette, friendly learning illustration, clear left-text composition, flat vector medium, engaging landing page hero"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Landing Page Visual",
+      "title": "Fitness Landing Visual",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] landing page hero for a [subject], [color] palette, energetic [lighting], motivating [mood], [composition], high-energy landing page visual",
+      "filledImagePrompt": "A dynamic landing page hero for a fitness app, bold black and neon-green palette, energetic gym lighting, motivating powerful mood, split composition, high-energy landing page visual"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Sales / Promo Graphic",
+      "title": "Flash Sale Graphic",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] sale graphic announcing [subject], [color] palette, bold [detail] discount, urgent [mood], [composition], eye-catching promo graphic",
+      "filledImagePrompt": "A bold sale graphic announcing a 50% off flash sale, red, white and black palette, bold oversized discount number, urgent mood, centered composition, eye-catching promo graphic"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Sales / Promo Graphic",
+      "title": "Black Friday Promo",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] promo graphic for [subject], [color] palette, dramatic [detail] typography, bold [composition], high-impact sale graphic",
+      "filledImagePrompt": "A dramatic promo graphic for Black Friday, black and neon-yellow palette, dramatic bold typography, bold centered composition, high-impact sale graphic"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Sales / Promo Graphic",
+      "title": "BOGO Offer Graphic",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] promo graphic for a [subject], [color] palette, playful [detail] icons, clear [composition], flat [medium], attention-grabbing offer graphic",
+      "filledImagePrompt": "A playful promo graphic for a buy-one-get-one deal, bright teal and orange palette, playful product icons, clear centered composition, flat vector medium, attention-grabbing offer graphic"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Testimonial / Review Card",
+      "title": "Customer Quote Card",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] testimonial card featuring [subject], [color] palette, [detail] star rating, clean [composition], flat [medium], trustworthy review card design",
+      "filledImagePrompt": "A clean testimonial card featuring a customer quote, soft blue and white palette, five-star rating detail, clean centered composition, flat vector medium, trustworthy review card design"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Testimonial / Review Card",
+      "title": "Review Highlight Card",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] review card with [subject], [color] palette, avatar [props], bold [detail] quote, [composition], polished testimonial graphic",
+      "filledImagePrompt": "A polished review card with a happy customer quote, warm cream and navy palette, circular avatar photo, bold pull-quote, balanced composition, polished testimonial graphic"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Testimonial / Review Card",
+      "title": "Video Testimonial Thumb",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] testimonial thumbnail featuring [subject], [color] palette, play [props], bold [detail] caption, [composition], click-worthy testimonial thumbnail",
+      "filledImagePrompt": "A friendly testimonial thumbnail featuring a smiling customer, teal and coral palette, central play button, bold caption text, balanced composition, click-worthy testimonial thumbnail"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Case Study Visual",
+      "title": "Results Case Study",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] case study visual highlighting [subject], [color] palette, [detail] stat callouts, clean [composition], flat [medium], professional case study graphic",
+      "filledImagePrompt": "A professional case study visual highlighting a 3x revenue result, navy and mint palette, big stat callouts, clean grid composition, flat vector medium, professional case study graphic"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Case Study Visual",
+      "title": "Before After Case Study",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] case study visual showing [subject], [color] split palette, side-by-side [detail], clear [composition], flat [medium], persuasive case study graphic",
+      "filledImagePrompt": "A clear case study visual showing before-and-after growth, gray versus green split palette, side-by-side chart detail, clear composition, flat vector medium, persuasive case study graphic"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Social Proof Graphic",
+      "title": "Trusted By Graphic",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] social proof graphic featuring [subject], [color] palette, [detail] logo row, clean [composition], flat [medium], credibility-boosting social proof graphic",
+      "filledImagePrompt": "A clean social proof graphic featuring a trusted-by logo row, white and slate palette, evenly spaced placeholder logos, clean centered composition, flat vector medium, credibility-boosting social proof graphic"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Social Proof Graphic",
+      "title": "User Count Milestone",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] social proof graphic celebrating [subject], [color] palette, bold [detail] number, festive [mood], [composition], shareable milestone graphic",
+      "filledImagePrompt": "A celebratory social proof graphic celebrating 100k users, purple and gold palette, bold oversized number, festive proud mood, centered composition, shareable milestone graphic"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Social Proof Graphic",
+      "title": "Rating Highlight Graphic",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] social proof graphic showing [subject], [color] palette, [detail] stars and score, clean [composition], flat [medium], trust-building rating graphic",
+      "filledImagePrompt": "A clean social proof graphic showing a 4.9 average rating, warm gold and white palette, star icons and bold score, clean centered composition, flat vector medium, trust-building rating graphic"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Lead Magnet Cover",
+      "title": "Ebook Cover Design",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] lead magnet ebook cover for [subject], [color] palette, bold [detail] title, professional [composition], flat [medium], download-worthy ebook cover",
+      "filledImagePrompt": "A professional lead magnet ebook cover for a marketing guide, deep blue and coral palette, bold clear title, clean centered composition, flat vector medium, download-worthy ebook cover"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Lead Magnet Cover",
+      "title": "Checklist Cover Design",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] lead magnet cover for a [subject], [color] palette, [detail] checklist icons, clean [composition], flat [medium], appealing freebie cover design",
+      "filledImagePrompt": "A friendly lead magnet cover for a productivity checklist, mint green and charcoal palette, checkmark and list icons, clean composition, flat vector medium, appealing freebie cover design"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Lead Magnet Cover",
+      "title": "Webinar Promo Cover",
+      "aspectRatio": "16:9",
+      "reusablePrompt": "A [style] lead magnet cover promoting a [subject], [color] palette, [props], bold [detail] title, [composition], click-worthy webinar promo graphic",
+      "filledImagePrompt": "A modern lead magnet cover promoting a free webinar, purple and yellow palette, presenter and screen props, bold title, split composition, click-worthy webinar promo graphic"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Coupon / Voucher Design",
+      "title": "Discount Coupon Design",
+      "aspectRatio": "3:2",
+      "reusablePrompt": "A [style] coupon design offering [subject], [color] palette, dashed [detail] border, bold [composition], flat [medium], attractive coupon voucher design",
+      "filledImagePrompt": "A bold coupon design offering 25% off, red and cream palette, dashed cut-out border, bold centered composition, flat vector medium, attractive coupon voucher design"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Coupon / Voucher Design",
+      "title": "Gift Voucher Design",
+      "aspectRatio": "3:2",
+      "reusablePrompt": "A [style] gift voucher featuring [subject], [color] palette, elegant [detail] border, refined [composition], flat [medium], premium gift voucher design",
+      "filledImagePrompt": "An elegant gift voucher featuring a floral corner motif, blush and gold palette, thin elegant border, refined centered composition, flat vector medium, premium gift voucher design"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Ad Creative",
+      "title": "Food Delivery Ad",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] ad creative for a [subject], [color] palette, appetizing [lighting], bold [detail] offer, [composition], mouth-watering food ad creative",
+      "filledImagePrompt": "A vibrant ad creative for a food delivery app, warm red and yellow palette, appetizing bright lighting, bold free-delivery offer, centered composition, mouth-watering food ad creative"
+    },
+    {
+      "categorySlug": "textiles-patterns",
+      "subcategory": "Wallpaper / Surface Pattern",
+      "title": "Chinoiserie Wallpaper",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A seamless [style] wallpaper of [subject], [color] palette, [detail] brushwork, repeating [composition], soft [texture], elegant surface pattern",
+      "filledImagePrompt": "A seamless chinoiserie wallpaper of blossoming branches and cranes, soft celadon and gold palette, delicate hand-painted brushwork, repeating panoramic composition, soft silk texture, elegant surface pattern"
+    },
+    {
+      "categorySlug": "educational-diagrams",
+      "subcategory": "Diagram / Chart",
+      "title": "Pie Chart Diagram",
+      "aspectRatio": "1:1",
+      "reusablePrompt": "A [style] pie chart visualizing [subject], [color] palette, labeled [detail] segments, balanced [composition], flat [medium], clean data chart",
+      "filledImagePrompt": "A modern pie chart visualizing budget breakdown, teal, coral and mustard palette, labeled percentage segments, balanced centered composition, flat vector medium, clean data chart"
+    },
+    {
+      "categorySlug": "music-entertainment",
+      "subcategory": "Book Cover",
+      "title": "Sci-Fi Book Cover",
+      "aspectRatio": "2:3",
+      "reusablePrompt": "A [style] book cover for a [subject], [color] palette, futuristic [lighting], bold [detail] title, [composition], striking book cover design",
+      "filledImagePrompt": "A striking book cover for a dystopian sci-fi novel, cold cyan and black palette, futuristic glowing lighting, bold minimal title, centered composition, striking book cover design"
+    },
+    {
+      "categorySlug": "marketing-advertising",
+      "subcategory": "Ad Creative",
+      "title": "Fashion Brand Ad",
+      "aspectRatio": "4:5",
+      "reusablePrompt": "A [style] ad creative for a [subject], [color] palette, editorial [lighting], aspirational [mood], bold [composition], premium fashion ad creative",
+      "filledImagePrompt": "A premium ad creative for a fashion brand, muted beige and black palette, editorial soft lighting, aspirational chic mood, bold off-center composition, premium fashion ad creative"
+    }
+  ]
+}

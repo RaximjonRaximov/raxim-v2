@@ -41,10 +41,10 @@ export default async function PromptPackPage({ params }: Props) {
             )}
             <span className="font-mono text-sm text-muted">{pack.promptItems.length} prompts</span>
           </div>
-          <p className="mt-8 text-3xl font-bold text-ink">${(pack.price / 100).toFixed(2)}</p>
+          <p className="mt-8 text-3xl font-bold text-ink">{pack.price === 0 ? "Free" : `$${(pack.price / 100).toFixed(2)}`}</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href={`/checkout/${pack.slug}`}>
-              <Button size="lg">Buy now</Button>
+              <Button size="lg">{pack.price === 0 ? "Get it free" : "Buy now"}</Button>
             </Link>
           </div>
         </div>

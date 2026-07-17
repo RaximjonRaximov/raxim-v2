@@ -41,10 +41,10 @@ export default async function CoursePage({ params }: Props) {
             <Badge variant="blue">{course.level}</Badge>
             <Badge variant="default">{course.lessons.length} lessons</Badge>
           </div>
-          <p className="mt-8 text-3xl font-bold text-ink">${(course.price / 100).toFixed(2)}</p>
+          <p className="mt-8 text-3xl font-bold text-ink">{course.price === 0 ? "Free" : `$${(course.price / 100).toFixed(2)}`}</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href={`/checkout/${course.slug}`}>
-              <Button size="lg">Buy now</Button>
+              <Button size="lg">{course.price === 0 ? "Get it free" : "Buy now"}</Button>
             </Link>
           </div>
         </div>
