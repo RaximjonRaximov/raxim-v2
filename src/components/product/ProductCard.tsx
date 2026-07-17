@@ -26,6 +26,7 @@ export function ProductCard({
             src={product.coverImage}
             alt={product.title}
             fill
+            loading="lazy"
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />

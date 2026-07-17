@@ -60,7 +60,7 @@ export default async function PromptPackPage({ params }: Props) {
                 <Badge variant={prompt.isFreeSample ? "lime" : "dark"}>{prompt.isFreeSample ? "Free sample" : "Premium"}</Badge>
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4">
-                <Image src={prompt.coverImage} alt={prompt.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                <Image src={prompt.coverImage} alt={prompt.title} fill loading="lazy" className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
               {(() => {
                 const extra = ((prompt.metadata as { images?: string[] } | null)?.images || []).filter((url) => url !== prompt.coverImage);
@@ -68,7 +68,7 @@ export default async function PromptPackPage({ params }: Props) {
                   <div className="grid grid-cols-2 gap-2 mb-4">
                     {extra.map((url, idx) => (
                       <div key={idx} className="relative aspect-[4/3] rounded-xl overflow-hidden">
-                        <Image src={url} alt={`${prompt.title} variant ${idx + 1}`} fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
+                        <Image src={url} alt={`${prompt.title} variant ${idx + 1}`} fill loading="lazy" className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
                       </div>
                     ))}
                   </div>
