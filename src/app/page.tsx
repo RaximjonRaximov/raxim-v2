@@ -37,7 +37,7 @@ export default async function HomePage() {
       <section className="px-4">
         <div className="max-w-wrapper mx-auto">
           <div className="flex items-end justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">Featured prompt packs</h2>
+            <h2 className="text-3xl font-bold tracking-tight">Prompt packs</h2>
             <Link href="/prompts" className="text-sm font-medium text-blue hover:underline">View all</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

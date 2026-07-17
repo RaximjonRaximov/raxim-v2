@@ -8,6 +8,7 @@ interface PromptEntry {
   index: number;
   title: string;
   prompt: string;
+  categorySlug: string;
 }
 
 function slugify(text: string): string {
@@ -22,22 +23,37 @@ async function seed() {
     fs.readFileSync(path.join(__dirname, "90_prompts.json"), "utf-8")
   );
 
-  const category = await prisma.category.upsert({
+  // Clean up old featured category and products if re-running
+  const featuredCategory = await prisma.category.findUnique({
     where: { slug: "featured-ai-prompts" },
-    update: {},
-    create: {
-      title: "Featured AI Prompts",
-      slug: "featured-ai-prompts",
-      description: "A curated set of 90 production-ready prompts with generated preview images.",
-      coverImage: "/prompts/featured/img_01.jpg",
-      sortOrder: -1,
-    },
+    include: { products: { select: { id: true } } },
   });
 
+  if (featuredCategory) {
+    const featuredIds = featuredCategory.products.map((p) => p.id);
+    await prisma.bundleProduct.deleteMany({ where: { childId: { in: featuredIds } } });
+    await prisma.product.deleteMany({ where: { id: { in: featuredIds } } });
+    await prisma.category.delete({ where: { id: featuredCategory.id } });
+  }
+
+  // Map each prompt to its matched category
+  const categorySlugs = [...new Set(prompts.map((p) => p.categorySlug))];
+  const categories = await prisma.category.findMany({
+    where: { slug: { in: categorySlugs } },
+  });
+
+  const categoryBySlug = new Map(categories.map((c) => [c.slug, c]));
   const createdProductIds: string[] = [];
 
   for (const entry of prompts) {
-    const slug = `featured-${entry.index}-${slugify(entry.title)}`;
+    const category = categoryBySlug.get(entry.categorySlug);
+    if (!category) {
+      console.warn(`Category not found: ${entry.categorySlug}, skipping ${entry.title}`);
+      continue;
+    }
+
+    const titleSlug = slugify(entry.title);
+    const slug = `${category.slug}-${entry.index}-${titleSlug}`;
     const coverImage = `/prompts/featured/img_${String(entry.index).padStart(2, "0")}.jpg`;
 
     const product = await prisma.product.upsert({
@@ -74,7 +90,7 @@ async function seed() {
     });
   }
 
-  // Add featured products to the full library and all-access bundles
+  // Add the new products to the full library and all-access bundles
   const bundles = await prisma.product.findMany({
     where: { slug: { in: ["full-prompt-library", "all-access"] } },
   });
@@ -91,7 +107,7 @@ async function seed() {
     });
   }
 
-  console.log(`Seeded ${prompts.length} featured prompts in category ${category.title}.`);
+  console.log(`Categorized and seeded ${createdProductIds.length} featured prompts.`);
 }
 
 seed()
