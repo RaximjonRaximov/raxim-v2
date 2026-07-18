@@ -8,13 +8,11 @@ export default async function AdminLayout({ children }: { children: ReactNode })
   if (session?.user?.role !== "ADMIN") redirect("/login");
 
   return (
-    <div className="max-w-wrapper mx-auto px-4 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-        <div className="md:col-span-1">
-          <AdminSidebar />
-        </div>
-        <div className="md:col-span-4">{children}</div>
-      </div>
+    <div className="min-h-screen flex bg-page">
+      <aside className="hidden md:flex w-64 flex-col fixed inset-y-0 left-0 border-r border-line bg-paper">
+        <AdminSidebar />
+      </aside>
+      <main className="flex-1 md:ml-64 p-6 lg:p-10 overflow-auto">{children}</main>
     </div>
   );
 }

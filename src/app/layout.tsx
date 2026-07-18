@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import { Sidebar } from "@/components/layout/Sidebar";
-import { MobileHeader } from "@/components/layout/MobileHeader";
+import { LayoutShell } from "@/components/layout/LayoutShell";
 import { Providers } from "@/components/Providers";
 
 export const dynamic = "force-dynamic";
@@ -41,11 +40,7 @@ export default function RootLayout({
     <html lang="en" className={`${manrope.variable} ${ibmPlexMono.variable}`}>
       <body className="antialiased min-h-screen bg-page text-ink">
         <Providers>
-          <MobileHeader />
-          <Sidebar />
-          <div className="lg:pl-64 min-h-screen flex flex-col">
-            <main className="flex-1 pt-16 lg:pt-0">{children}</main>
-          </div>
+          <LayoutShell>{children}</LayoutShell>
         </Providers>
       </body>
     </html>
