@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Product } from "@prisma/client";
+import { productImageUrl } from "@/lib/image";
 import { Badge } from "@/components/ui/Badge";
 
 export function ProductCard({
@@ -23,7 +24,7 @@ export function ProductCard({
       <div className="rounded-2xl border border-line bg-paper overflow-hidden shadow-soft transition-all duration-300 hover:shadow-card hover:-translate-y-1">
         <div className="relative aspect-[4/3] overflow-hidden">
           <Image
-            src={product.coverImage}
+            src={productImageUrl(product.slug)}
             alt={product.title}
             fill
             loading="lazy"

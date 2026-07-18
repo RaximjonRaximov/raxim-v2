@@ -37,3 +37,9 @@ yarn-error.log*
 next-env.d.ts
 
 /src/generated/prisma
+
+# generated images and data caches
+/public/generated-covers
+/public/generated-prompt-covers
+data/prompt-manifest.json
+data/prompt-images

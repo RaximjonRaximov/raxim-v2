@@ -11,6 +11,7 @@
     "db:seed": "tsx prisma/seed.ts",
     "db:generate": "prisma generate",
     "db:studio": "prisma studio",
+    "upload:drive": "tsx scripts/upload-to-drive.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

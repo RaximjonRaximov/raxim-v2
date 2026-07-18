@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { getPromptPackWithSamples } from "@/actions/catalog";
+import { promptImageUrl, productImageUrl } from "@/lib/image";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${pack.title} — Raxim`,
     description: pack.description,
-    openGraph: { images: [pack.coverImage] },
+    openGraph: { images: [productImageUrl(pack.slug)] },
   };
 }
 
@@ -27,7 +28,7 @@ export default async function PromptPackPage({ params }: Props) {
     <div className="max-w-wrapper mx-auto px-4 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <div className="rounded-2xl overflow-hidden border border-line shadow-soft aspect-[4/3] relative">
-          <Image src={pack.coverImage} alt={pack.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+          <Image src={productImageUrl(pack.slug)} alt={pack.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
         </div>
         <div>
           <p className="font-mono text-[10px] uppercase tracking-label text-blue mb-3">Prompt pack</p>
@@ -60,7 +61,7 @@ export default async function PromptPackPage({ params }: Props) {
                 <Badge variant={prompt.isFreeSample ? "lime" : "dark"}>{prompt.isFreeSample ? "Free sample" : "Premium"}</Badge>
               </div>
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4">
-                <Image src={prompt.coverImage} alt={prompt.title} fill loading="lazy" className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                <Image src={promptImageUrl(prompt.id)} alt={prompt.title} fill loading="lazy" className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
               {(() => {
                 const extra = ((prompt.metadata as { images?: string[] } | null)?.images || []).filter((url) => url !== prompt.coverImage);
@@ -68,7 +69,7 @@ export default async function PromptPackPage({ params }: Props) {
                   <div className="grid grid-cols-2 gap-2 mb-4">
                     {extra.map((url, idx) => (
                       <div key={idx} className="relative aspect-[4/3] rounded-xl overflow-hidden">
-                        <Image src={url} alt={`${prompt.title} variant ${idx + 1}`} fill loading="lazy" className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
+                        <Image src={promptImageUrl(prompt.id, idx + 1)} alt={`${prompt.title} variant ${idx + 1}`} fill loading="lazy" className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
                       </div>
                     ))}
                   </div>

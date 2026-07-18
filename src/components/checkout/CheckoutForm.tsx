@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { createCheckoutSession } from "@/actions/checkout";
+import { productImageUrl } from "@/lib/image";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
@@ -41,7 +42,7 @@ export function CheckoutForm({ product, telegramHandle }: { product: Product; te
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
       <Card className="p-6">
         <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-6">
-          <Image src={product.coverImage} alt={product.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+          <Image src={productImageUrl(product.slug)} alt={product.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
         </div>
         <Badge variant="default">{product.type === "PROMPT_PACK" ? "Prompt pack" : product.type === "COURSE" ? "Course" : "Bundle"}</Badge>
         <h2 className="mt-3 text-2xl font-bold text-ink">{product.title}</h2>
