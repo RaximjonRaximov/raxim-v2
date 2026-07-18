@@ -53,15 +53,6 @@ export function MobileHeader() {
                 {item.label}
               </Link>
             ))}
-            {session?.user?.role === "ADMIN" && (
-              <Link
-                href="/admin"
-                onClick={() => setOpen(false)}
-                className="block px-4 py-3 rounded-xl text-ink hover:bg-surface font-semibold"
-              >
-                Admin
-              </Link>
-            )}
           </nav>
           <div className="mt-6 pt-6 border-t border-line">
             {session?.user ? (

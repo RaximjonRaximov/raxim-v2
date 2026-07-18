@@ -48,24 +48,13 @@ export function Sidebar() {
 
       <div className="p-4 border-t border-line space-y-2">
         {session?.user ? (
-          <>
-            {session.user.role === "ADMIN" && (
-              <Link
-                href="/admin"
-                className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-muted hover:text-ink hover:bg-surface transition-colors"
-              >
-                <SettingsIcon className="w-5 h-5" />
-                Admin
-              </Link>
-            )}
-            <button
-              onClick={() => signOut({ callbackUrl: "/" })}
-              className="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-muted hover:text-ink hover:bg-surface transition-colors"
-            >
-              <LogoutIcon className="w-5 h-5" />
-              Sign out
-            </button>
-          </>
+          <button
+            onClick={() => signOut({ callbackUrl: "/" })}
+            className="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold text-muted hover:text-ink hover:bg-surface transition-colors"
+          >
+            <LogoutIcon className="w-5 h-5" />
+            Sign out
+          </button>
         ) : (
           <Link
             href="/login"
@@ -117,15 +106,6 @@ function MailIcon(props: { className?: string }) {
   return (
     <svg {...props} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
       <path d="M3 8l7.9 5.26a2 2 0 002.2 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-    </svg>
-  );
-}
-
-function SettingsIcon(props: { className?: string }) {
-  return (
-    <svg {...props} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="3" />
-      <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82 1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
     </svg>
   );
 }

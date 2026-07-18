@@ -16,7 +16,7 @@ export function AdminSidebar() {
 
   return (
     <div className="flex flex-col h-full">
-      <Link href="/" className="flex items-center gap-2 px-4 py-5 font-bold text-xl text-ink tracking-tight">
+      <Link href="/admin" className="flex items-center gap-2 px-4 py-5 font-bold text-xl text-ink tracking-tight">
         <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-accent text-white text-sm">R</span>
         Raxim
       </Link>
