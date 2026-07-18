@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --page: #f8faff;
+  --page: #ffffff;
   --paper: #ffffff;
-  --ink: #0c0e12;
-  --muted: #687080;
-  --line: rgba(16, 20, 30, 0.11);
-  --blue: #3c63ff;
-  --cyan: #20c9ff;
-  --rose: #ff5d8f;
-  --lime: #cfff4a;
-  --violet: #8567ff;
-  --peach: #ffad7e;
-  --shadow: 0 26px 80px rgba(35, 45, 78, 0.16);
-  --soft-shadow: 0 14px 40px rgba(35, 45, 78, 0.09);
-  --radius: 22px;
+  --surface: #f8fafc;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: rgba(15, 23, 42, 0.08);
+  --blue: #3b82f6;
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --violet: #8b5cf6;
+  --rose: #f43f5e;
+  --lime: #84cc16;
+  --shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+  --radius: 18px;
   --max: 1280px;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--blue);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
@@ -56,11 +56,11 @@ body {
   }
 
   .animate-stagger > *:nth-child(1) { animation-delay: 0ms; }
-  .animate-stagger > *:nth-child(2) { animation-delay: 50ms; }
-  .animate-stagger > *:nth-child(3) { animation-delay: 100ms; }
-  .animate-stagger > *:nth-child(4) { animation-delay: 150ms; }
-  .animate-stagger > *:nth-child(5) { animation-delay: 200ms; }
-  .animate-stagger > *:nth-child(6) { animation-delay: 250ms; }
-  .animate-stagger > *:nth-child(7) { animation-delay: 300ms; }
-  .animate-stagger > *:nth-child(8) { animation-delay: 350ms; }
+  .animate-stagger > *:nth-child(2) { animation-delay: 60ms; }
+  .animate-stagger > *:nth-child(3) { animation-delay: 120ms; }
+  .animate-stagger > *:nth-child(4) { animation-delay: 180ms; }
+  .animate-stagger > *:nth-child(5) { animation-delay: 240ms; }
+  .animate-stagger > *:nth-child(6) { animation-delay: 300ms; }
+  .animate-stagger > *:nth-child(7) { animation-delay: 360ms; }
+  .animate-stagger > *:nth-child(8) { animation-delay: 420ms; }
 }

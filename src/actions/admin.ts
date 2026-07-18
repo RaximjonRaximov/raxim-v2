@@ -127,6 +127,7 @@ export async function adminCreatePromptItem(data: {
   coverImage: string;
   sortOrder: number;
   isFreeSample?: boolean;
+  metadata?: object;
 }) {
   await requireAdmin();
   return prisma.promptItem.create({ data });
@@ -141,6 +142,7 @@ export async function adminUpdatePromptItem(
     coverImage: string;
     sortOrder: number;
     isFreeSample: boolean;
+    metadata?: object;
   }>
 ) {
   await requireAdmin();

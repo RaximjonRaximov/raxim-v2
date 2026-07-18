@@ -17,9 +17,6 @@ function coverImage(seed: string, width = 800, height = 600) {
   return `https://picsum.photos/seed/${safe}/${width}/${height}`;
 }
 
-const promptTemplate = (title: string) =>
-  `A highly detailed ${title.toLowerCase()} composition, cinematic editorial style, soft natural lighting, refined color grading, 8k resolution --ar [ASPECT] --style raw`;
-
 const categories = JSON.parse(
   fs.readFileSync(path.join(__dirname, "categories.json"), "utf-8")
 ) as Array<{ title: string; subcategories: string[] }>;
@@ -106,18 +103,14 @@ async function seed() {
 
   await prisma.siteContent.createMany({
     data: [
-      { key: "hero_headline", value: "AI visuals that win clients" },
-      { key: "hero_subtitle", value: "Prompt packs, video courses, and design services for modern freelancers." },
-      { key: "hero_cta", value: "Shop prompts" },
+      { key: "hero_headline", value: "High-quality AI prompts for creators" },
+      { key: "hero_subtitle", value: "Curated image prompts, reusable formulas, and video courses for modern freelancers." },
+      { key: "hero_cta", value: "Explore prompts" },
       { key: "about_text", value: "Raxim is an independent AI visual designer helping freelancers ship high-end imagery without the high-end budget." },
       { key: "services_intro", value: "From brand systems to AI-assisted art direction, here is how we can work together." },
     ],
     skipDuplicates: true,
   });
-
-  // Seed categories and subcategory products
-  const packProducts: string[] = [];
-  let productSort = 0;
 
   for (let i = 0; i < categories.length; i++) {
     const cat = categories[i];
@@ -125,76 +118,31 @@ async function seed() {
 
     const category = await prisma.category.upsert({
       where: { slug: categorySlug },
-      update: {},
+      update: { sortOrder: i },
       create: {
         title: cat.title,
         slug: categorySlug,
-        description: `AI prompt collection for ${cat.title.toLowerCase()}.`,
+        description: `High-quality AI image prompts for ${cat.title.toLowerCase()}.`,
         coverImage: coverImage(cat.title),
         sortOrder: i,
       },
     });
 
-    for (let j = 0; j < cat.subcategories.length; j++) {
-      const sub = cat.subcategories[j];
-      const subSlug = `${categorySlug}-${slugify(sub)}`;
-      const title = sub;
-
-      const product = await prisma.product.upsert({
-        where: { slug: subSlug },
-        update: {},
-        create: {
-          type: ProductType.PROMPT_PACK,
-          slug: subSlug,
-          title,
-          description: `A curated collection of production-ready prompts for ${title.toLowerCase()}. Each prompt includes aspect ratio guidance and replaceable tokens so you can drop in your own subjects and colors.`,
-          price: 0,
-          coverImage: coverImage(subSlug),
-          categoryId: category.id,
-          sortOrder: productSort++,
-        },
-      });
-
-      packProducts.push(product.id);
-
-      await prisma.promptItem.upsert({
-        where: { id: `${product.id}-sample` },
-        update: {},
-        create: {
-          id: `${product.id}-sample`,
-          packId: product.id,
-          title: `${title} Starter Prompt`,
-          aspectRatio: "1:1",
-          promptText: promptTemplate(title),
-          coverImage: coverImage(`${subSlug}-prompt`),
-          sortOrder: 0,
-          isFreeSample: true,
-        },
-      });
-    }
+    await prisma.product.upsert({
+      where: { slug: categorySlug },
+      update: {},
+      create: {
+        type: ProductType.PROMPT_PACK,
+        slug: categorySlug,
+        title: cat.title,
+        description: `Curated AI image prompt collection for ${cat.title.toLowerCase()}.`,
+        price: 0,
+        coverImage: coverImage(cat.title),
+        categoryId: category.id,
+        sortOrder: i,
+      },
+    });
   }
-
-  const fullPromptLibrary = await prisma.product.upsert({
-    where: { slug: "full-prompt-library" },
-    update: {},
-    create: {
-      type: ProductType.BUNDLE,
-      slug: "full-prompt-library",
-      title: "Full Prompt Library",
-      description: `Every prompt pack in one bundle. ${packProducts.length}+ prompts covering all categories.`,
-      price: 0,
-      coverImage: coverImage("full-prompt-library", 1200, 800),
-      isBundle: true,
-      metadata: { bundleType: "prompts" },
-    },
-  });
-
-  await prisma.bundleProduct.deleteMany({ where: { bundleId: fullPromptLibrary.id } });
-  await prisma.bundleProduct.createMany({
-    data: packProducts.map((childId) => ({ bundleId: fullPromptLibrary.id, childId })),
-  });
-
-  const courseProducts: string[] = [];
 
   for (let i = 0; i < courses.length; i++) {
     const course = courses[i];
@@ -223,45 +171,23 @@ async function seed() {
         },
       },
     });
-    courseProducts.push(product.id);
 
-    const lessons = Array.from({ length: course.lessonCount }).map((_, idx) => ({
-      courseId: product.id,
-      title: `Lesson ${idx + 1}: ${course.title.split(" ").slice(0, 3).join(" ")} fundamentals`,
-      slug: `lesson-${idx + 1}`,
-      sortOrder: idx,
-      videoKey: `courses/${course.slug}/lesson-${idx + 1}.mp4`,
-      duration: 600 + idx * 30,
-      description: "Detailed walkthrough with examples and templates.",
-    }));
-
-    await prisma.lesson.createMany({ data: lessons });
+    const lessonCount = await prisma.lesson.count({ where: { courseId: product.id } });
+    if (lessonCount === 0) {
+      const lessons = Array.from({ length: course.lessonCount }).map((_, idx) => ({
+        courseId: product.id,
+        title: `Lesson ${idx + 1}: ${course.title.split(" ").slice(0, 3).join(" ")} fundamentals`,
+        slug: `lesson-${idx + 1}`,
+        sortOrder: idx,
+        videoKey: `courses/${course.slug}/lesson-${idx + 1}.mp4`,
+        duration: 600 + idx * 30,
+        description: "Detailed walkthrough with examples and templates.",
+      }));
+      await prisma.lesson.createMany({ data: lessons });
+    }
   }
 
-  const allAccess = await prisma.product.upsert({
-    where: { slug: "all-access" },
-    update: {},
-    create: {
-      type: ProductType.BUNDLE,
-      slug: "all-access",
-      title: "All-Access",
-      description: "Every course plus the full prompt library. The complete Raxim toolkit.",
-      price: 0,
-      coverImage: coverImage("all-access", 1200, 800),
-      isBundle: true,
-      metadata: { bundleType: "all-access" },
-    },
-  });
-
-  await prisma.bundleProduct.deleteMany({ where: { bundleId: allAccess.id } });
-  await prisma.bundleProduct.createMany({
-    data: [
-      ...packProducts.map((childId) => ({ bundleId: allAccess.id, childId })),
-      ...courseProducts.map((childId) => ({ bundleId: allAccess.id, childId })),
-    ],
-  });
-
-  console.log(`Seed complete. ${categories.length} categories, ${packProducts.length} prompt packs, ${courseProducts.length} courses.`);
+  console.log(`Seed complete. ${categories.length} categories, ${courses.length} courses.`);
 }
 
 seed()

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Product } from "@prisma/client";
-import { productImageUrl } from "@/lib/image";
 import { Badge } from "@/components/ui/Badge";
 
 export function ProductCard({
@@ -21,10 +20,10 @@ export function ProductCard({
 
   return (
     <Link href={link} className="group block">
-      <div className="rounded-2xl border border-line bg-paper overflow-hidden shadow-soft transition-all duration-300 hover:shadow-card hover:-translate-y-1">
-        <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="rounded-2xl border border-line bg-paper overflow-hidden shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+        <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-accent/10 to-violet/10">
           <Image
-            src={productImageUrl(product.slug)}
+            src={product.coverImage || `/api/og?title=${encodeURIComponent(product.title)}`}
             alt={product.title}
             fill
             loading="lazy"
@@ -41,8 +40,8 @@ export function ProductCard({
           <h3 className="text-lg font-bold text-ink tracking-tight line-clamp-1">{product.title}</h3>
           <p className="mt-2 text-sm text-muted line-clamp-2">{product.description}</p>
           <div className="mt-4 flex items-center justify-between">
-            <span className="text-sm font-mono uppercase tracking-label text-muted">{countLabel}</span>
-            <span className="text-lg font-bold text-ink">{product.price === 0 ? "Free" : `$${(product.price / 100).toFixed(2)}`}</span>
+            <span className="text-xs font-mono uppercase tracking-label text-muted">{countLabel}</span>
+            <span className="text-sm font-bold text-ink">{product.price === 0 ? "Free" : `$${(product.price / 100).toFixed(2)}`}</span>
           </div>
         </div>
       </div>

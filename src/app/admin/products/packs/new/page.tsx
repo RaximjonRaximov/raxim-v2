@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { adminCreateProduct, adminListCategories } from "@/actions/admin";
+import { adminCreateProduct, adminCreatePromptItem } from "@/actions/admin";
 import { Input } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -9,26 +9,40 @@ export const metadata = {
 };
 
 export default async function NewPackPage() {
-  const categories = await adminListCategories();
-
   async function create(formData: FormData) {
     "use server";
     const title = String(formData.get("title"));
     const slug = String(formData.get("slug"));
     const description = String(formData.get("description"));
-    const price = Number(formData.get("price")) * 100;
     const coverImage = String(formData.get("coverImage"));
-    const categoryId = String(formData.get("categoryId"));
+    const aspectRatio = String(formData.get("aspectRatio") || "1:1");
+    const promptText = String(formData.get("promptText"));
+    const galleryRaw = String(formData.get("galleryImages") || "");
+    const galleryImages = galleryRaw
+      .split("\n")
+      .map((s) => s.trim())
+      .filter(Boolean);
 
     const product = await adminCreateProduct({
       type: "PROMPT_PACK",
       slug,
       title,
       description,
-      price,
+      price: 0,
       coverImage,
-      categoryId: categoryId || undefined,
     });
+
+    await adminCreatePromptItem({
+      packId: product.id,
+      title: `${title} Prompt`,
+      aspectRatio,
+      promptText,
+      coverImage,
+      sortOrder: 0,
+      isFreeSample: true,
+      metadata: { images: galleryImages },
+    });
+
     redirect(`/admin/products/packs/${product.id}/edit`);
   }
 
@@ -40,18 +54,19 @@ export default async function NewPackPage() {
           <Input name="title" label="Title" required />
           <Input name="slug" label="Slug" required />
           <Input name="description" label="Description" required />
-          <Input name="price" type="number" label="Price (USD)" min="0" step="0.01" required />
           <Input name="coverImage" label="Cover image URL" required />
+          <Input name="aspectRatio" label="Aspect ratio" defaultValue="1:1" required />
           <div>
-            <label className="block mb-2 text-xs font-mono uppercase tracking-label text-muted">Category</label>
-            <select name="categoryId" className="w-full h-12 px-4 rounded-2xl border border-line bg-paper">
-              <option value="">Uncategorized</option>
-              {categories.map((c) => (
-                <option key={c.id} value={c.id}>{c.title}</option>
-              ))}
-            </select>
+            <label className="block mb-2 text-xs font-mono uppercase tracking-label text-muted">Prompt text</label>
+            <textarea name="promptText" rows={6} className="w-full p-4 rounded-2xl border border-line bg-paper" required />
           </div>
-          <Button type="submit">Create pack</Button>
+          <div>
+            <label className="block mb-2 text-xs font-mono uppercase tracking-label text-muted">
+              Gallery image URLs (one per line)
+            </label>
+            <textarea name="galleryImages" rows={5} className="w-full p-4 rounded-2xl border border-line bg-paper" placeholder="https://..." />
+          </div>
+          <Button type="submit">Create prompt pack</Button>
         </form>
       </Card>
     </div>

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Manrope, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import { Nav } from "@/components/layout/Nav";
-import { Footer } from "@/components/layout/Footer";
+import { Sidebar } from "@/components/layout/Sidebar";
+import { MobileHeader } from "@/components/layout/MobileHeader";
 import { Providers } from "@/components/Providers";
 
 export const dynamic = "force-dynamic";
@@ -21,11 +21,11 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raxim — AI Visual Designer",
-  description: "Prompt packs, video courses, and design services for freelancers.",
+  title: "Raxim — AI Image Prompts & Courses",
+  description: "Curated AI image prompts and video courses for creators and freelancers.",
   openGraph: {
-    title: "Raxim — AI Visual Designer",
-    description: "Prompt packs, video courses, and design services for freelancers.",
+    title: "Raxim — AI Image Prompts & Courses",
+    description: "Curated AI image prompts and video courses for creators and freelancers.",
     url: "https://raxim.design",
     siteName: "Raxim",
     type: "website",
@@ -39,11 +39,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${manrope.variable} ${ibmPlexMono.variable}`}>
-      <body className="antialiased min-h-screen flex flex-col">
+      <body className="antialiased min-h-screen bg-page text-ink">
         <Providers>
-          <Nav />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <MobileHeader />
+          <Sidebar />
+          <div className="lg:pl-64 min-h-screen flex flex-col">
+            <main className="flex-1 pt-16 lg:pt-0">{children}</main>
+          </div>
         </Providers>
       </body>
     </html>
