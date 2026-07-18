@@ -44,3 +44,4 @@ next-env.d.ts
 data/prompt-manifest.json
 data/prompt-images
 /public/raxim-prompts-archive.zip
+/public/raxim-prompts-dataset.zip
