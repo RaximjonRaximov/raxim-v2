@@ -1,11 +1,17 @@
 import { LoginForm } from "@/components/auth/LoginForm";
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
 
 export const metadata = {
   title: "Log in — Raxim",
   description: "Log in to your Raxim account.",
 };
 
-export default function LoginPage({ searchParams }: { searchParams?: { redirect?: string } }) {
+export default async function LoginPage({ searchParams }: { searchParams?: { redirect?: string } }) {
+  const session = await auth();
+  if (session?.user?.role === "ADMIN") redirect("/admin");
+  if (session?.user) redirect(searchParams?.redirect || "/account");
+
   return (
     <div className="max-w-wrapper mx-auto px-4 py-20 flex justify-center">
       <div className="w-full max-w-md">

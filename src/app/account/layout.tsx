@@ -6,6 +6,7 @@ import { ReactNode } from "react";
 export default async function AccountLayout({ children }: { children: ReactNode }) {
   const session = await auth();
   if (!session?.user) redirect("/login?redirect=/account");
+  if (session.user.role === "ADMIN") redirect("/admin");
 
   return (
     <div className="max-w-wrapper mx-auto px-4 py-12">
