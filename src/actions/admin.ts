@@ -77,6 +77,11 @@ export async function adminGetProduct(id: string) {
   });
 }
 
+export async function adminDeleteProduct(id: string) {
+  await requireAdmin();
+  return prisma.product.delete({ where: { id } });
+}
+
 export async function adminCreateProduct(data: {
   type: ProductType;
   slug: string;

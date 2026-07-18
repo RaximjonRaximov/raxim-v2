@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { ReactNode } from "react";
+import { AdminSidebar } from "@/components/admin/AdminSidebar";
 
 export default async function AdminLayout({ children }: { children: ReactNode }) {
   const session = await auth();
@@ -10,29 +10,9 @@ export default async function AdminLayout({ children }: { children: ReactNode })
   return (
     <div className="max-w-wrapper mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-        <aside className="md:col-span-1">
-          <nav className="space-y-1">
-            {[
-              { href: "/admin", label: "Dashboard" },
-              { href: "/admin/products", label: "Products" },
-              { href: "/admin/categories", label: "Categories" },
-              { href: "/admin/orders", label: "Orders" },
-              { href: "/admin/customers", label: "Customers" },
-              { href: "/admin/coupons", label: "Coupons" },
-              { href: "/admin/media", label: "Media" },
-              { href: "/admin/content", label: "Content" },
-              { href: "/admin/settings", label: "Settings" },
-            ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block px-4 py-2 rounded-xl text-sm font-medium text-ink hover:bg-paper border border-transparent hover:border-line"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-        </aside>
+        <div className="md:col-span-1">
+          <AdminSidebar />
+        </div>
         <div className="md:col-span-4">{children}</div>
       </div>
     </div>

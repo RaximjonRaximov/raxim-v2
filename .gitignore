@@ -41,6 +41,8 @@ next-env.d.ts
 # generated images and data caches
 /public/generated-covers
 /public/generated-prompt-covers
+/public/uploads
+/public/generated
 data/prompt-manifest.json
 data/prompt-images
 /public/raxim-prompts-archive.zip

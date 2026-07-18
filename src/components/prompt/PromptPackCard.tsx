@@ -4,17 +4,19 @@ import { Product } from "@prisma/client";
 
 export function PromptPackCard({
   product,
+  href,
 }: {
   product: Product & {
     promptItems?: { metadata?: unknown }[];
   };
+  href?: string;
 }) {
   const prompt = product.promptItems?.[0];
   const gallery = (prompt?.metadata as { images?: string[] } | null)?.images || [];
   const imageCount = gallery.length + 1;
 
   return (
-    <Link href={`/prompts/${product.slug}`} className="group block">
+    <Link href={href || `/prompts/${product.slug}`} className="group block">
       <div className="rounded-2xl bg-paper border border-line overflow-hidden shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
         <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-accent/10 to-violet/10">
           <Image

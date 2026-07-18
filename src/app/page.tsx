@@ -26,10 +26,10 @@ export default async function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/prompts"
+              href="/photo-effects"
               className="inline-flex items-center px-6 py-3 rounded-xl bg-accent text-white font-bold hover:bg-accent-hover transition-colors shadow-lg shadow-accent/20"
             >
-              {cta || "Explore prompts"}
+              {cta || "Explore effects"}
             </Link>
             <Link
               href="/courses"
@@ -44,14 +44,14 @@ export default async function HomePage() {
       <section className="px-6 lg:px-10 py-14 max-w-wrapper mx-auto">
         <div className="flex items-end justify-between mb-8">
           <div>
-            <p className="text-xs font-mono uppercase tracking-label text-accent mb-2">Image Prompts</p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-ink tracking-tight">Featured prompt formulas</h2>
+            <p className="text-xs font-mono uppercase tracking-label text-accent mb-2">Photo Effects</p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-ink tracking-tight">Featured photo effects</h2>
           </div>
-          <Link href="/prompts" className="text-sm font-bold text-accent hover:underline">View all</Link>
+          <Link href="/photo-effects" className="text-sm font-bold text-accent hover:underline">View all</Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 animate-stagger">
           {packs.slice(0, 8).map((pack) => (
-            <PromptPackCard key={pack.id} product={pack} />
+            <PromptPackCard key={pack.id} product={pack} href={`/photo-effects/${pack.slug}`} />
           ))}
         </div>
       </section>
