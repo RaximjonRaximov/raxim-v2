@@ -17,7 +17,13 @@ export function EffectGenerator({ slug, defaultPrompt }: { slug: string; default
     setOutput(null);
     try {
       const result = await generatePhotoEffect(new FormData(e.currentTarget));
-      setOutput(result.outputUrl);
+      if (result?.error) {
+        setError(result.error);
+      } else if (result?.outputUrl) {
+        setOutput(result.outputUrl);
+      } else {
+        setError("No response from image generator");
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong");
     } finally {

@@ -8,15 +8,15 @@ export async function generatePhotoEffect(formData: FormData) {
   const slug = String(formData.get("slug") || "");
   const promptOverride = String(formData.get("prompt") || "");
 
-  if (!file || !slug) throw new Error("Image and effect are required");
-  if (!file.type.startsWith("image/")) throw new Error("Only image files are allowed");
-  if (file.size > 10 * 1024 * 1024) throw new Error("Image must be smaller than 10 MB");
+  if (!file || !slug) return { error: "Image and effect are required" };
+  if (!file.type.startsWith("image/")) return { error: "Only image files are allowed" };
+  if (file.size > 10 * 1024 * 1024) return { error: "Image must be smaller than 10 MB" };
 
   const product = await prisma.product.findUnique({
     where: { slug, type: "PROMPT_PACK", published: true },
     include: { promptItems: { orderBy: { sortOrder: "asc" } } },
   });
-  if (!product) throw new Error("Effect not found");
+  if (!product) return { error: "Effect not found" };
 
   const promptItem = product.promptItems[0];
   const basePrompt = promptItem?.promptText || `Transform this photo into the style of ${product.title}`;
@@ -34,23 +34,63 @@ export async function generatePhotoEffect(formData: FormData) {
   await fs.writeFile(uploadPath, Buffer.from(arrayBuffer));
 
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.UPLOAD_BASE_URL || "";
-  if (!baseUrl) throw new Error("Site URL is not configured for image processing");
+  if (!baseUrl) return { error: "Site URL is not configured for image processing" };
 
   const imageUrl = `${baseUrl.replace(/\/$/, "")}/uploads/${uploadName}`;
-  const seed = Math.floor(Math.random() * 1_000_000);
 
-  const pollinationUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(promptText)}?image=${encodeURIComponent(imageUrl)}&width=1024&height=1024&seed=${seed}&nologo=true`;
+  const apiKey = process.env.TOGETHER_API_KEY || process.env.POLLINATIONS_API_KEY;
+  if (!apiKey) {
+    return { error: "AI rasm generatsiyasi uchun API kalit o'rnatilmagan. Iltimos, TOGETHER_API_KEY yoki POLLINATIONS_API_KEY qo'shing." };
+  }
 
-  const response = await fetch(pollinationUrl, { cache: "no-store" });
-  if (!response.ok) throw new Error(`Image generation failed: ${response.status} ${response.statusText}`);
+  const result = await generateWithTogether(imageUrl, promptText, apiKey);
+  if (result.error || !result.buffer) return { error: result.error || "Image generation returned empty data" };
 
   const generatedDir = `${process.cwd()}/public/generated`;
   const outputName = `${id}-out.jpg`;
   const outputPath = `${generatedDir}/${outputName}`;
 
   await fs.mkdir(generatedDir, { recursive: true });
-  const buffer = Buffer.from(await response.arrayBuffer());
-  await fs.writeFile(outputPath, buffer);
+  await fs.writeFile(outputPath, result.buffer);
 
   return { outputUrl: `/generated/${outputName}`, prompt: promptText };
+}
+
+type GenerationResult = { error: string; buffer?: undefined } | { buffer: Buffer; error?: undefined };
+
+async function generateWithTogether(imageUrl: string, prompt: string, apiKey: string): Promise<GenerationResult> {
+  try {
+    const response = await fetch("https://api.together.xyz/v1/images/generations", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "black-forest-labs/FLUX.1-schnell-Free",
+        prompt,
+        width: 1024,
+        height: 1024,
+        image_url: imageUrl,
+        response_format: "bytes",
+      }),
+    });
+    if (!response.ok) {
+      const text = await response.text();
+      return { error: `Together AI generation failed: ${response.status} ${response.statusText} - ${text.slice(0, 200)}` };
+    }
+    const data = (await response.json()) as { data?: { b64_json?: string; url?: string }[] };
+    const item = data.data?.[0];
+    if (item?.b64_json) {
+      return { buffer: Buffer.from(item.b64_json, "base64") };
+    }
+    if (item?.url) {
+      const imageRes = await fetch(item.url);
+      if (!imageRes.ok) return { error: "Failed to fetch generated image from Together AI" };
+      return { buffer: Buffer.from(await imageRes.arrayBuffer()) };
+    }
+    return { error: "Together AI returned empty image data" };
+  } catch (e) {
+    return { error: e instanceof Error ? e.message : "Image generation request failed" };
+  }
 }
